@@ -22,14 +22,5 @@ Description: "Population for recommendation 9: ICU Patients with NRS>4"
       * type = $loinc#78030-4 "Episode of care Type"
       * valueCodeableConcept = $cs-kontaktart-de#intensivstationaer "Intensivstationär"
   * characteristic[episodeOfCare][=].exclude = false
-// include patients with NRS >=4
-// painObservableLOINC does not yet exist, no suitable characteristic found
-  * characteristic[painObsevableLOINC][+]
-    * linkId = "NRSinRuhe"
-    * definitionByTypeAndValue
-      * type = $loinc#72514-3 "Pain severity - 0-10 verbal numeric rating [Score]"
-      * valueRange
-        * low = 4 'score'
-  * characteristic[painObsevableLOINC][=].exclude = false
-* characteristic[0].exclude = false
+
 
