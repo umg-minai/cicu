@@ -28,11 +28,3 @@ Description: "In ICU Patients NRS should be <4"
     * measure = $loinc#72514-3 "Pain severity - 0-10 verbal numeric rating [Score] - Reported" 
     * detailRange
       * high = 3 'score'
-
-/*********************/
-/* Activity Plan */
-/*********************/
-
-//not sure if needed here? 
-
-
