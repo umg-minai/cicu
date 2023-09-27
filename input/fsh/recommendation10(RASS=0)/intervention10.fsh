@@ -26,8 +26,8 @@ Description: "In ICU Patients RASS should be 0 or 1"
   * target
     * measure = $sct#457441000124102 "Richmond agitation-sedation scale"
     * detailRange
-      * low = 0
-      * high = 1
+      * low = -1
+      * high = 0
 * action[sedationManagement][+]
   * code = $sct#406187008 "Sedation management (procedure)"
   * goalId[+] = "sedation-management-RASS-0-goal"

@@ -13,7 +13,7 @@ Description: "In ICU Patients NRS should be <4"
 * identifier.value = "InterventionPlanforICUPatientswithhighNRS"
 * date = "2023-08"
 * status = #active
-* description = "In intensive care patients NRS should be >4"
+* description = "In intensive care patients NRS should be <4"
 * subjectCanonical = Canonical(PopulationPatientsICUwithhighNRS)
 * extension[partOf].valueCanonical = Canonical(RecommendationPatientsICUwithhighNRS)
 //loads of mistakes: due to nonexistant action?
@@ -27,7 +27,7 @@ Description: "In ICU Patients NRS should be <4"
   * target
     * measure = $loinc#72514-3 "Pain severity - 0-10 verbal numeric rating [Score] - Reported" 
     * detailRange
-      * high = 4 'score'
+      * high = 3 'score'
 
 /*********************/
 /* Activity Plan */
