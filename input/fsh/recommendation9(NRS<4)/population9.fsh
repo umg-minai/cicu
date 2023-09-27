@@ -32,3 +32,4 @@ Description: "Population for recommendation 9: ICU Patients with NRS>4"
         * low = 4 'score'
   * characteristic[painObsevableLOINC][=].exclude = false
 * characteristic[0].exclude = false
+
