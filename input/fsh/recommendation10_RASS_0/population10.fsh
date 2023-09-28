@@ -75,21 +75,4 @@ Description: "Population for recommendation 10: ICU Patients with RASS≠0"
       * type = $loinc#78030-4 "Episode of care Type"
       * valueCodeableConcept = $cs-kontaktart-de#intensivstationaer "Intensivstationär"
   * characteristic[episodeOfCare][+].exclude = false
-// include patients with RASS≠0 (or include all except for the patients with indication for deeper sedation?)
-//include characteristic[measurement]?
-//* characteristic[measurement][+]
-//  * linkId = "RASS"
- // * definitionByTypeAndValue
- //   * type = $sct#254291000 "Staging and scales"
-  //  * valueCodeableConcept = $sct#457441000124102 "Richmond agitation-sedation scale"
- //   * valueRange
-//how to write ≠0? value[?]?
- //     * low = -5
-  //    * high = 5
-//* characteristic[measurement][=].exclude = false
-  * characteristic[procedure][+]
-    * linkId = "sedation"
-    * definitionByTypeAndValue
-      * typeCodeableConcept = $sct#71388002 "Procedure (procedure)"
-      * valueCodeableConcept = $sct#72641008 "Sedation"
 * characteristic[=].exclude = false

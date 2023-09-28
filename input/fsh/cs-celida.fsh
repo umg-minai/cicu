@@ -7,5 +7,5 @@ Title: "CODEX-CELIDA"
 Description: "Concepts required in recommendations that are not defined elsewhere"
 * ^url = $cs-celida
 * #tvpibw "Tidal volume / ideal body weight (ARDSnet)" "Tidal volume per ideal body weight according to ARDSnet formula"
-
+* #nudesc "Nursing delirium screening scale"
 
