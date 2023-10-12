@@ -35,6 +35,6 @@ Description: "Population for recommendation 9: ICU Patients with Delirium"
     * definitionByTypeAndValue
       * type = $loinc#54627-5 "Signs and symptoms of delirium (from CAM)"
           //no existing value for that
-      * valueRange = ?? 
-  * characteristic[DeliriumObservableLOINCLOINC][=].exclude = false
+      * valueRange = ??
+  * characteristic[DeliriumObservableLOINC][=].exclude = false
 * characteristic[=].exclude = false
