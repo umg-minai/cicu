@@ -23,18 +23,16 @@ Description: "Population for recommendation 9: ICU Patients with Delirium"
       * valueCodeableConcept = $cs-kontaktart-de#intensivstationaer "Intensivstationär"
   * characteristic[episodeOfCare][=].exclude = false
 // include patients with Delirium
-// DeliriumObservableLOINC does not yet exist
 //what would be the right code if I want ICU + any of delirium definitions(sct or loinc)? does #any-of cancel #all-of?
   * characteristic[condition][+]
     * linkId = "delirium"
     * definitionByTypeAndValue
-      * typeCodeableConcept = $sct#404684003 "Clinical finding (finding)"
+      * type = $sct#404684003 "Clinical finding (finding)"
       * valueCodeableConcept = $sct#231441005 "Delirium"
-  * characteristic[DeliriumObservableLOINC][+]
+  * characteristic[assessmentScale][+]
     * linkId = "cam-icu+"
     * definitionByTypeAndValue
       * type = $loinc#54627-5 "Signs and symptoms of delirium (from CAM)"
-          //no existing value for that
       * valueRange = ??
-  * characteristic[DeliriumObservableLOINC][=].exclude = false
+  * characteristic[assessmentScale][=].exclude = false
 * characteristic[=].exclude = false

@@ -17,17 +17,15 @@ Description: "In ICU Patients RASS should be 0 or 1"
 * subjectCanonical = Canonical(PopulationPatientsICUwithRASSnot0)
 * extension[partOf].valueCanonical = Canonical(RecommendationPatientsICUwithRASSnot0)
 //non-existant action. add? or try with procedure? 
-* goal[sedationManagement][+]
-// not sure if right category
-  * category = $sct#406187008 "Sedation management (procedure)"
+* goal[assessmentScale][+]
   * id = "sedation-management-RASS-0-goal"
   * description.text = "RASS should be 0 or 1"
-  //(category = $sct#273249006 "Assessment scales")
+  * category = $sct#273249006 "Assessment scales (assessment scale)"
   * target
-    * measure = $sct#457441000124102 "Richmond agitation-sedation scale"
+    * measure = $sct-us#457441000124102 "Richmond agitation-sedation scale"
     * detailRange
-      * low = -1
-      * high = 0
+      * low = -1 'score'
+      * high = 0 'score'
 * action[sedationManagement][+]
   * code = $sct#406187008 "Sedation management (procedure)"
   * goalId[+] = "sedation-management-RASS-0-goal"

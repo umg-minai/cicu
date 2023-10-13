@@ -20,8 +20,7 @@ Description: "In ICU Patients NRS should be <4"
 * action[painManagement][+]
   * code = $sct#278414003 "Pain management (procedure)"
   * goalId[+] = "pain-management-goal"
-* goal[painManagement][+]
-  * category = $sct#710995003 "Pain monitoring"
+* goal[assessmentScale][+]
   * id = "pain-management-goal"
   * description.text = "NRS should not be >4"
   * target
