@@ -17,7 +17,8 @@ echo $path
 mkdir -p $path
 cd $path
 
-wget -q $package_url -O $filename
+echo $filename
+curl -L -o $filename -s $package_url
 tar -zxf $filename
 rm $filename
 
