@@ -22,6 +22,7 @@ Description: "In ICU Patients NRS should be <4"
   * goalId[+] = "pain-management-goal"
 * goal[assessmentScale][+]
   * id = "pain-management-goal"
+  * category = $sct#273249006 "Assessment scales (assessment scale)"
   * description.text = "NRS should not be >4"
   * target
     * measure = $loinc#72514-3 "Pain severity - 0-10 verbal numeric rating [Score] - Reported" 
