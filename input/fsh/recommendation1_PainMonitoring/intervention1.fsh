@@ -16,42 +16,44 @@ Description: "ICU Patients: Pain Monitoring"
 * description = "In intensive care patients pain should be monitored with validated pain scores at least 1 time per shift "
 * subjectCanonical = Canonical(PopulationPatientsICUPainMonitoring)
 * extension[partOf].valueCanonical = Canonical(RecommendationPatientsICUPainMonitoring)
-//action PainMonitoring to be added by Gregor
-* action[painMonitoring][+]
+* action[assessment][+]
   * definitionCanonical = Canonical (PainMonitoringNRS)
   * selectionBehavior = #one-or-more
-  * code = $sct#710995003 "Pain monitoring(procedure)"
-* action[painMonitoring][+]
+  * code = $sct#386053000 "Evaluation procedure (procedure)"
+* action[assessment][+]
   * definitionCanonical = Canonical (PainMonitoringVAS)
   * selectionBehavior = #one-or-more
-  * code = $sct#710995003 "Pain monitoring(procedure)"
-* action[painMonitoring][+]
+  * code = $sct#386053000 "Evaluation procedure (procedure)"
+* action[assessment][+]
   * definitionCanonical = Canonical (PainMonitoringVRS)
   * selectionBehavior = #one-or-more
-  * code = $sct#710995003 "Pain monitoring(procedure)"
-* action[painMonitoring][+]
+  * code = $sct#386053000 "Evaluation procedure (procedure)"
+* action[assessment][+]
   * definitionCanonical = Canonical (PainMonitoringFPS-R)
   * selectionBehavior = #one-or-more
-  * code = $sct#710995003 "Pain monitoring(procedure)"
-// CELIDA eigener code (muss erstellt werden)
-//* action[painMonitoring][+]
- // * definitionCanonical = Canonical (PainMonitoringBPS)
-  //* selectionBehavior = #one-or-more
- // * code = $sct#710995003 "Pain monitoring"
-* action[painMonitoring][+]
+  * code = $sct#386053000 "Evaluation procedure (procedure)"
+/* @lisavasiljewa: PainMonitoringBPS instance missing
+* action[assessment][+]
+  * definitionCanonical = Canonical (PainMonitoringBPS)
+  * selectionBehavior = #one-or-more
+  * code = $cs-celida#bps "Behavioral Pain Scale"
+  */
+* action[assessment][+]
   * definitionCanonical = Canonical (PainMonitoringCPOT)
   * selectionBehavior = #one-or-more
-  * code = $sct#710995003 "Pain monitoring(procedure)"
-* action[painMonitoring][+]
+  * code = $sct#386053000 "Evaluation procedure (procedure)"
+/* @lisavasiljewa: PainMonitoringPIR instance missing
+* action[assessment][+]
   * definitionCanonical = Canonical (PainMonitoringPIR)
   * selectionBehavior = #one-or-more
-  * code = $sct#710995003 "Pain monitoring(procedure)"
+  * code = $sct#386053000 "Evaluation procedure (procedure)"
+*/
 
 /**********************/
 /* Recommended Actions */
 /**********************/
-Instance: InterventionPainMonitoringNRS
-InstanceOf: pain-monitoring-action
+Instance: PainMonitoringNRS
+InstanceOf: assessment-action
 Usage: #definition
 Title: "Pain Monitoring with NRS"
 Description: "Pain Monitoring in ICU Patients with NRS"
@@ -60,14 +62,11 @@ Description: "Pain Monitoring in ICU Patients with NRS"
 * name = "PainMonitoringWithNRSPlan"
 * status = #active
 * description = "Pain monitoring in ICU Patients with NRS"
-* code = $sct#710995003 "Pain monitoring(procedure)"
-* productCodeableConcept
-  * coding[loinc] = $loinc#72514-3 "Pain severity - 0-10 verbal numeric rating [Score] - Reported" 
-* timing[+]
-  * Timing = #Q8H
+* code = $loinc#72514-3 "Pain severity - 0-10 verbal numeric rating [Score] - Reported" 
+* timingTiming.code = #Q8H
 
-Instance: InterventionPainMonitoringVAS
-InstanceOf: pain-monitoring-action
+Instance: PainMonitoringVAS
+InstanceOf: assessment-action
 Usage: #definition
 Title: "Pain Monitoring with VAS"
 Description: "Pain Monitoring in ICU Patients with VAS"
@@ -76,14 +75,11 @@ Description: "Pain Monitoring in ICU Patients with VAS"
 * name = "PainMonitoringWithVASPlan"
 * status = #active
 * description = "Pain monitoring in ICU Patients with VAS"
-* code = $sct#710995003 "Pain monitoring(procedure)"
-* productCodeableConcept
-  * coding[loinc] = $loinc#38214-3 "Pain severity [Score] Visual analog score"
-* timing[+]
-  * Timing = #Q8H
+* code = $loinc#38214-3 "Pain severity [Score] Visual analog score"
+* timingTiming.code = #Q8H
 
-Instance: InterventionPainMonitoringVRS
-InstanceOf: pain-monitoring-action
+Instance: PainMonitoringVRS
+InstanceOf: assessment-action
 Usage: #definition
 Title: "Pain Monitoring with VRS"
 Description: "Pain Monitoring in ICU Patients with VRS"
@@ -92,14 +88,11 @@ Description: "Pain Monitoring in ICU Patients with VRS"
 * name = "PainMonitoringWithVRSPlan"
 * status = #active
 * description = "Pain monitoring in ICU Patients with VRS"
-* code = $sct#710995003 "Pain monitoring(procedure)"
-* productCodeableConcept
-  * coding[loinc] = $loinc#54834-7 "Rate pain severity during assessment period using verbal descriptor scale"
-* timing[+]
-  * Timing = #Q8H
+* code = $loinc#54834-7 "Rate pain severity during assessment period using verbal descriptor scale"
+* timingTiming.code = #Q8H
 
-Instance: InterventionPainMonitoringFPS-R
-InstanceOf: pain-monitoring-action
+Instance: PainMonitoringFPS-R
+InstanceOf: assessment-action
 Usage: #definition
 Title: "Pain Monitoring with FPS-R"
 Description: "Pain Monitoring in ICU Patients with FPS-R"
@@ -108,14 +101,11 @@ Description: "Pain Monitoring in ICU Patients with FPS-R"
 * name = "PainMonitoringWithFPS-RPlan"
 * status = #active
 * description = "Pain monitoring in ICU Patients with FPS-R"
-* code = $sct#710995003 "Pain monitoring(procedure)"
-* productCodeableConcept
-  * coding[loinc] = $loinc#57696-7 "Pain severity FPS-R"
-* timing[+]
-  * Timing = #Q8H
+* code = $loinc#57696-7 "Pain severity FPS-R"
+* timingTiming.code = #Q8H
 
-Instance: InterventionPainMonitoringCPOT
-InstanceOf: pain-monitoring-action
+Instance: PainMonitoringCPOT
+InstanceOf: assessment-action
 Usage: #definition
 Title: "Pain Monitoring with CPOT"
 Description: "Pain Monitoring in ICU Patients with CPOT"
@@ -124,14 +114,12 @@ Description: "Pain Monitoring in ICU Patients with CPOT"
 * name = "PainMonitoringWithCPOTPlan"
 * status = #active
 * description = "Pain monitoring in ICU Patients with CPOT"
-* code = $sct#710995003 "Pain monitoring(procedure)"
-* productCodeableConcept
-  * coding[omop] = $omop#722042 "Critical Care Pain Observation Tool (CPOT)"
-* timing[+]
-  * Timing = #Q8H
+* code = $cs-celida#cpot "Critical Care Pain Observation Tool (CPOT)"
+* timingTiming.code = #Q8H
 
-Instance: InterventionPainMonitoringNRS
-InstanceOf: pain-monitoring-action
+// @lisavasiljewa Was ist hier gemeint? Diese Instanz existiert schon
+/*Instance: PainMonitoringNRS
+InstanceOf: assessment-action
 Usage: #definition
 Title: "Pain Monitoring with NRS"
 Description: "Pain Monitoring in ICU Patients with NRS"
@@ -140,9 +128,6 @@ Description: "Pain Monitoring in ICU Patients with NRS"
 * name = "PainMonitoringWithNRSPlan"
 * status = #active
 * description = "Pain monitoring in ICU Patients with NRS"
-* code = $sct#710995003 "Pain monitoring(procedure)"
-* productCodeableConcept
-  * coding[loinc] = $loinc#72514-3 "Pain severity - 0-10 verbal numeric rating [Score] - Reported" 
-* timing[+]
-  * Timing = #Q8H
-      
+* code = $loinc#72514-3 "Pain severity - 0-10 verbal numeric rating [Score] - Reported" 
+* timingTiming.code = #Q8H
+*/      
