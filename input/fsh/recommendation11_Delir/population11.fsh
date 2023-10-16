@@ -30,9 +30,9 @@ Description: "Population for recommendation 9: ICU Patients with Delirium"
       * type = $sct#404684003 "Clinical finding (finding)"
       * valueCodeableConcept = $sct#231441005 "Delirium"
   * characteristic[assessmentScale][+]
-    * linkId = "cam-icu+"
+    * linkId = "cam-icu"
     * definitionByTypeAndValue
       * type = $loinc#54627-5 "Signs and symptoms of delirium (from CAM)"
-      * valueRange = ??
+      * valueCodeableConcept = $sct#10828004 "Positive (qualifier value)"
   * characteristic[assessmentScale][=].exclude = false
 * characteristic[=].exclude = false
