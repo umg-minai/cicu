@@ -17,7 +17,7 @@ Description: "ICU Patients should be delirium free"
 * subjectCanonical = Canonical(PopulationPatientsICUwithDelirium)
 * extension[partOf].valueCanonical = Canonical(RecommendationPatientsICUwithDelirium)
 //delirium days per patients
-* goal[][+]
+/* goal[][+]
   * category = 
   * id = ""
   * description.text = "

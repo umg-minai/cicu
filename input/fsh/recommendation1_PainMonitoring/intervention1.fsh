@@ -117,17 +117,3 @@ Description: "Pain Monitoring in ICU Patients with CPOT"
 * code = $cs-celida#cpot "Critical Care Pain Observation Tool (CPOT)"
 * timingTiming.code = #Q8H
 
-// @lisavasiljewa Was ist hier gemeint? Diese Instanz existiert schon
-/*Instance: PainMonitoringNRS
-InstanceOf: assessment-action
-Usage: #definition
-Title: "Pain Monitoring with NRS"
-Description: "Pain Monitoring in ICU Patients with NRS"
-* insert canonical-url(patients-icu-pain-monitoring, recommended-action/pain-monitoring-NRS)
-* insert publisher-experimental-version(0.1)
-* name = "PainMonitoringWithNRSPlan"
-* status = #active
-* description = "Pain monitoring in ICU Patients with NRS"
-* code = $loinc#72514-3 "Pain severity - 0-10 verbal numeric rating [Score] - Reported" 
-* timingTiming.code = #Q8H
-*/      
