@@ -35,7 +35,7 @@ Description: "ICU Patients: Pain Monitoring"
 * action[assessment][+]
   * definitionCanonical = Canonical (PainMonitoringBPS)
   * selectionBehavior = #one-or-more
-  * code = $cs-celida#bps "Behavioral Pain Scale"
+  * code = $sct#386053000 "Evaluation procedure (procedure)"
 * action[assessment][+]
   * definitionCanonical = Canonical (PainMonitoringCPOT)
   * selectionBehavior = #one-or-more

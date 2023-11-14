@@ -47,12 +47,12 @@ Description: "ICU Patients: DAAS Monitoring"
 * action[assessment][+]
   * definitionCanonical = Canonical (PainMonitoringBPS)
   * selectionBehavior = #one-or-more
-  * code = $cs-celida#bps "Behavioral Pain Scale"
+  * code = $sct#386053000 "Evaluation procedure (procedure)"
 * action[assessment][+]
   * definitionCanonical = Canonical (PainMonitoringCPOT)
   * selectionBehavior = #one-or-more
   * code = $sct#386053000 "Evaluation procedure (procedure)"
- * action[assessment][+]
+* action[assessment][+]
   * definitionCanonical = Canonical (AnxietyMonitoringSTAI)
   * selectionBehavior = #one-or-more
   * code = $sct#386053000 "Evaluation procedure (procedure)"
@@ -61,6 +61,21 @@ Description: "ICU Patients: DAAS Monitoring"
 /**********************/
 /* Recommended Actions */
 /**********************/
+
+Instance: AnxietyMonitoringSTAI
+InstanceOf: assessment-action
+Usage: #definition
+Title: "Anxiety Monitoring with STAI"
+Description: "Anxiety Monitoring in ICU Patients with STAI"
+* insert canonical-url(patients-icu-daas-monitoring, recommended-action/anxiety-monitoring-NuDesc)
+* insert publisher-experimental-version(1.0)
+* name = "AnxietyMonitoringWithSTAIPlan"
+* status = #active
+* description = "Anxiety monitoring in ICU Patients with STAI"
+* code = $sct#273830002 "Spielberger state-trait anxiety inventory (assessment scale)"
+* timingTiming.code = #Q8H
+
+/*
 Instance: PainMonitoringNRS
 InstanceOf: assessment-action
 Usage: #definition
@@ -177,16 +192,6 @@ Description: "Delirium Monitoring in ICU Patients with NuDESC"
 * description = "Delirium monitoring in ICU Patients with NuDESC"
 * code = $cs-celida#nudesc "Nursing Delirium Screening Scale (Nu-DESC)"
 * timingTiming.code = #Q8H
+*/
 
-Instance: AnxietyMonitoringNuDESC
-InstanceOf: assessment-action
-Usage: #definition
-Title: "Anxiety Monitoring with NuDESC"
-Description: "Anxiety Monitoring in ICU Patients with NuDESC"
-* insert canonical-url(patients-icu-daas-monitoring, recommended-action/anxiety-monitoring-NuDesc)
-* insert publisher-experimental-version(1.0)
-* name = "DeliriumMonitoringWithNuDESCPlan"
-* status = #active
-* description = "Delirium monitoring in ICU Patients with STAI"
-* code = $sct#273830002 "Spielberger state-trait anxiety inventory (assessment scale)"
-* timingTiming.code = #Q8H
+
