@@ -30,9 +30,10 @@ Usage: #definition
 Title: "Sedation Monitoring with RASS"
 Description: "Sedation Monitoring in ICU Patients with RASS"
 * insert canonical-url(patients-icu-sedation-monitoring, recommended-action/sedation-monitoring-RASS)
-* insert publisher-experimental-version(0.1)
+* insert publisher-experimental-version(1.0)
 * name = "SedationMonitoringWithRASSPlan"
 * status = #active
 * description = "Sedation monitoring in ICU Patients with RASS"
 * code = $sct-us#457441000124102 "Richmond agitation-sedation scale"
 * timingTiming.code = #Q8H
+

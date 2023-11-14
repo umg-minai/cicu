@@ -32,12 +32,10 @@ Description: "ICU Patients: Pain Monitoring"
   * definitionCanonical = Canonical (PainMonitoringFPS-R)
   * selectionBehavior = #one-or-more
   * code = $sct#386053000 "Evaluation procedure (procedure)"
-/* @lisavasiljewa: PainMonitoringBPS instance missing
 * action[assessment][+]
   * definitionCanonical = Canonical (PainMonitoringBPS)
   * selectionBehavior = #one-or-more
   * code = $cs-celida#bps "Behavioral Pain Scale"
-  */
 * action[assessment][+]
   * definitionCanonical = Canonical (PainMonitoringCPOT)
   * selectionBehavior = #one-or-more
@@ -117,3 +115,15 @@ Description: "Pain Monitoring in ICU Patients with CPOT"
 * code = $cs-celida#cpot "Critical Care Pain Observation Tool (CPOT)"
 * timingTiming.code = #Q8H
 
+Instance: PainMonitoringBPS
+InstanceOf: assessment-action
+Usage: #definition
+Title: "Pain Monitoring with BPS"
+Description: "Pain Monitoring in ICU Patients with BPS"
+* insert canonical-url(patients-icu-pain-monitoring, recommended-action/pain-monitoring-BPS)
+* insert publisher-experimental-version(0.1)
+* name = "PainMonitoringWithBPSPlan"
+* status = #active
+* description = "Pain monitoring in ICU Patients with BPS"
+* code = $cs-celida#bps "Behavioral Pain Scale (BPS)"
+* timingTiming.code = #Q8H
