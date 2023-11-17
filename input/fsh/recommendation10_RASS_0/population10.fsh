@@ -1,17 +1,29 @@
 /**************/
 /* Population */
 /**************/
-Instance: PopulationPatientsICUwithRASSnot0
+Instance: PopulationPatientsICUSedationGoal
 InstanceOf: recommendation-eligibility-criteria
 Usage: #definition
-Title: "Population: ICU Patients with RASS≠0"
-Description: "Population for recommendation 10: ICU Patients with RASS≠0"
-* insert canonical-url(patients-icu-RASSnot0, population/patients-icu-with-RASS-not-0)
-* name = "ICU_Patients_with_RASS≠0"
-* description = "ICU Patients with RASS≠0"
-* identifier.value = "ICU_Patients_with_RASS≠0"
+Title: "Population: ICU Patients Sedation goal RASS 0 to -1"
+Description: "Population for recommendation 10: ICU Patients Sedation goal RASS 0 to -1"
+* insert canonical-url(patients-icu-Sedation-goal, population/patients-icu-sedation-goal)
+* name = "ICU_Patients_Sedation_Goal"
+* description = "ICU Patients Sedation goal is RASS 0 to -1"
+* identifier.value = "ICU_Patients_Sedation_Goal"
 * identifier.system = $ceosys
 * status = #active
+//Include ICU Patients 
+* characteristic[+].definitionByCombination
+  * code = #all-of
+  * characteristic[episodeOfCare][+]
+    * linkId = "intensive-care-treatment"
+    * definitionByTypeAndValue
+      * type = $loinc#78030-4 "Episode of care Type"
+      * valueCodeableConcept = $cs-kontaktart-de#intensivstationaer "Intensivstationär"
+  * characteristic[episodeOfCare][+].exclude = false
+* characteristic[=].exclude = false
+
+/*
 //Exclude patients with indication for deeper sedation
 * characteristic[+].definitionByCombination
   * code = #any-of
@@ -66,13 +78,5 @@ Description: "Population for recommendation 10: ICU Patients with RASS≠0"
       * valueCodeableConcept = $sct#257884004 "Immobilization - action"
   * characteristic[condition][=].exclude = false
 * characteristic[=].exclude = true
-//Include ICU Patients 
-* characteristic[+].definitionByCombination
-  * code = #all-of
-  * characteristic[episodeOfCare][+]
-    * linkId = "intensive-care-treatment"
-    * definitionByTypeAndValue
-      * type = $loinc#78030-4 "Episode of care Type"
-      * valueCodeableConcept = $cs-kontaktart-de#intensivstationaer "Intensivstationär"
-  * characteristic[episodeOfCare][+].exclude = false
-* characteristic[=].exclude = false
+
+*/
