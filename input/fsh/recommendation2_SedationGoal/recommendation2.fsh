@@ -6,7 +6,7 @@ InstanceOf: recommendation
 Usage: #definition
 Title: "Recommendation: ICU Patients: Sedation Monitoring"
 Description: "Recommendation for ICU Patients: Sedation Monitoring"
-* name = "Recommendation1-SedationMonitoring"
+* name = "Recommendation2-SedationMonitoring"
 * title = "Intervention for Population: ICU Patients - Sedation Monitoring"
 * version = "1.0"
 * date = "2023-10-05"
