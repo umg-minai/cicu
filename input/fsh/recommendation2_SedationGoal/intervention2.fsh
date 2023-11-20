@@ -35,5 +35,5 @@ Description: "Sedation Monitoring in ICU Patients with RASS"
 * status = #active
 * description = "Sedation monitoring in ICU Patients with RASS"
 * code = $sct-us#457441000124102 "Richmond agitation-sedation scale"
-* timingTiming.code = #Q8H
+* timingTiming.code = $cs-gts-abbreviation#Q8H
 

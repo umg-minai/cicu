@@ -7,6 +7,6 @@ Title: "CODEX-CELIDA"
 Description: "Concepts required in recommendations that are not defined elsewhere"
 * ^url = $cs-celida
 * #tvpibw "Tidal volume / ideal body weight (ARDSnet)" "Tidal volume per ideal body weight according to ARDSnet formula"
-* #nudesc "Nursing delirium screening scale"
-* #bps "Behavioral pain scale"
+* #nudesc "Nursing Delirium Screening Scale (Nu-DESC)"
+* #bps "Behavioral Pain Scale (BPS)"
 * #cpot "Critical Care Pain Observation Tool (CPOT)"
