@@ -48,10 +48,21 @@ jobs:
         with:
           args: ./scripts/run-ig-publisher.sh
 
+      # Step to check if the repository is public
+      - name: Check if repo is public
+        id: check_repo
+        run: |
+          REPO_VISIBILITY=$(curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+          https://api.github.com/repos/${{ github.repository }} | jq -r '.private')
+          if [ "$REPO_VISIBILITY" = "false" ]; then
+            echo "REPO_IS_PUBLIC=true" >> $GITHUB_ENV
+          else
+            echo "REPO_IS_PUBLIC=false" >> $GITHUB_ENV
+          fi
 
       # deploy implementation guide to github pages
       - name: Deploy
-        if: (github.ref == 'refs/heads/master' || github.ref == 'refs/heads/main')
+        if: env.REPO_IS_PUBLIC == 'true' && (github.ref == 'refs/heads/master' || github.ref == 'refs/heads/main')
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
@@ -60,7 +71,7 @@ jobs:
 
       # upload binaries to release
       - name: Upload binaries to release
-        if: (github.ref == 'refs/heads/master' || github.ref == 'refs/heads/main')
+        if: env.REPO_IS_PUBLIC == 'true' && (github.ref == 'refs/heads/master' || github.ref == 'refs/heads/main')
         uses: svenstaro/upload-release-action@v2
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
