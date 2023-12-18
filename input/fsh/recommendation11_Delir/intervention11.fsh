@@ -45,5 +45,5 @@ Description: "Delirium Monitoring in ICU Patients with CAMICU"
 * status = #active
 * description = "Delirium monitoring in ICU Patients with CAMIU"
 * code = $loinc#54627-5 "Signs and symptoms of delirium (from CAM) [CAM.MDSv3]" 
-* quantity = false
+//* quantity =  'false'
 // wie negative abbilden?

@@ -19,5 +19,5 @@ Description: "Recommendation for ICU Patients: Sedation Goal RASS is 0 to -1"
   * code = $cs-common-process#guideline-based-care
   * description = "Intervention plan for ICU Patients: Sedation Goal RASS 0 to -1"
   * definitionCanonical = Canonical(InterventionPatientsICUSedationGoal)
-  * selectionBehavior = #all
+  * selectionBehavior = #at-most-one
 

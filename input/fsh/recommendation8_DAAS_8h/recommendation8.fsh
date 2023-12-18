@@ -19,4 +19,4 @@ Description: "Recommendation for ICU Patients: Delir, Anxiety, Analgesia, Sedati
   * code = $cs-common-process#guideline-based-care
   * description = "Intervention plan for ICU Patients: DAAS Monitoring"
   * definitionCanonical = Canonical(InterventionPatientsICUDAASMonitoring)
-  * selectionBehavior = #all
+  * selectionBehavior = #at-most-one

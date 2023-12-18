@@ -19,5 +19,5 @@ Description: "Recommendation for ICU Patients to archive an NRS goal below 4"
   * code = $cs-common-process#guideline-based-care
   * description = "Intervention plan for ICU Patients: NRS goal <4"
   * definitionCanonical = Canonical(InterventionPatientsICUNRSgoal)
-  * selectionBehavior = #all
+  * selectionBehavior = #at-most-one
 

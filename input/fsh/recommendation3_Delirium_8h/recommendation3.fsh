@@ -19,4 +19,4 @@ Description: "Recommendation for ICU Patients: Delirium Monitoring"
   * code = $cs-common-process#guideline-based-care
   * description = "Intervention plan for ICU Patients: Delirium Monitoring"
   * definitionCanonical = Canonical(InterventionPatientsICUDeliriumMonitoring)
-  * selectionBehavior = #all
+  * selectionBehavior = #at-most-one

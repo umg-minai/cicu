@@ -19,5 +19,5 @@ Description: "Recommendation for ICU Patients: The Delirium Goal is no Dilirium"
   * code = $cs-common-process#guideline-based-care
   * description = "Intervention plan for ICU Patients: Delirium Goal is no Delirium"
   * definitionCanonical = Canonical(InterventionPatientsICUnoDeliriumGoal)
-  * selectionBehavior =#all
+  * selectionBehavior = #at-most-one
 
