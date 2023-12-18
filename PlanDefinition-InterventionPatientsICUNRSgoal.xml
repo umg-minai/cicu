@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PlanDefinition xmlns="http://hl7.org/fhir">
+  <id value="InterventionPatientsICUNRSgoal"/>
+  <meta>
+    <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-plan"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: PlanDefinition</b><a name="InterventionPatientsICUNRSgoal"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource PlanDefinition &quot;InterventionPatientsICUNRSgoal&quot; </p><p style="margin-bottom: 0px">Profile: <a href="file:///github/workspace/output/StructureDefinition-recommendation-plan.html">Recommendation Plan</a></p></div><p><b>knowledgeCapability</b>: computable</p><p><b>knowledgeRepresentationLevel</b>: structured</p><p><b>partOf</b>: <a href="PlanDefinition-RecommendationPatientsICUNRSgoal.html">NRS Intervention for Population: ICU Patients NRS goal &lt;4</a></p><p><b>url</b>: <code>https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-nrs-goal&lt;4/intervention-plan/patients-icu-nrs-goal&lt;4</code></p><p><b>identifier</b>: id: InterventionPlanforICUPatientsNRSGoal&lt;4</p><p><b>version</b>: 7.0</p><p><b>name</b>: Intervention_Plan_ICU_Patients_NRS_Goal&lt;4</p><p><b>title</b>: Intervention plan for ICU Patients: NRS goal &lt;4</p><p><b>type</b>: ECA Rule <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.3.0/CodeSystem-plan-definition-type.html">PlanDefinitionType</a>#eca-rule)</span></p><p><b>status</b>: active</p><p><b>experimental</b>: true</p><p><b>subject</b>: <a href="EvidenceVariable-PopulationPatientsICUNRSgoal.html">Population: ICU Patients NRS goal &lt;4</a></p><p><b>date</b>: 2023-11</p><p><b>publisher</b>: NUM CODEX+ CELIDA</p><p><b>description</b>: In intensive care patients NRS should be &lt;4</p><blockquote><p><b>goal</b></p><blockquote><p><b>id</b></p>pain-management-goal</blockquote><p><b>category</b>: Assessment scales (assessment scale) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#273249006)</span></p><p><b>description</b>: NRS should not be &gt;4 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><h3>Targets</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Measure</b></td><td><b>Detail[x]</b></td></tr><tr><td style="display: none">*</td><td>Pain severity - 0-10 verbal numeric rating [Score] - Reported <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#72514-3)</span></td><td>?-3</td></tr></table></blockquote><h3>Actions</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td><td><b>GoalId</b></td></tr><tr><td style="display: none">*</td><td>Pain management (procedure) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#278414003)</span></td><td>pain-management-goal</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+    <valueCode value="computable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel">
+    <valueCode value="structured"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-partOf">
+    <valueCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-nrs-goal&lt;4/recommendation/patients-icu-nrs-goal&lt;4"/>
+  </extension>
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-nrs-goal&lt;4/intervention-plan/patients-icu-nrs-goal&lt;4"/>
+  <identifier>
+    <value value="InterventionPlanforICUPatientsNRSGoal&lt;4"/>
+  </identifier>
+  <version value="7.0"/>
+  <name value="Intervention_Plan_ICU_Patients_NRS_Goal&lt;4"/>
+  <title value="Intervention plan for ICU Patients: NRS goal &lt;4"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/plan-definition-type"/>
+      <code value="eca-rule"/>
+    </coding>
+  </type>
+  <status value="active"/>
+  <experimental value="true"/>
+  <subjectCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-nrs-goal&lt;4/population/patients-icu-nrs-goal&lt;4"/>
+  <date value="2023-11"/>
+  <publisher value="NUM CODEX+ CELIDA"/>
+  <description value="In intensive care patients NRS should be &lt;4"/>
+  <goal id="pain-management-goal">
+    <category>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="273249006"/>
+        <display value="Assessment scales (assessment scale)"/>
+      </coding>
+    </category>
+    <description>
+      <text value="NRS should not be &gt;4"/>
+    </description>
+    <target>
+      <measure>
+        <coding>
+          <system value="http://loinc.org"/>
+          <code value="72514-3"/>
+          <display value="Pain severity - 0-10 verbal numeric rating [Score] - Reported"/>
+        </coding>
+      </measure>
+      <detailRange>
+        <high>
+          <value value="3"/>
+        </high>
+      </detailRange>
+    </target>
+  </goal>
+  <action>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="278414003"/>
+        <display value="Pain management (procedure)"/>
+      </coding>
+    </code>
+    <goalId value="pain-management-goal"/>
+  </action>
+</PlanDefinition>

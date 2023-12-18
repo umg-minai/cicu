@@ -1,0 +1,232 @@
+[
+  {
+    "id" : "codex-celida",
+    "type" : "CodeSystem",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/CodeSystem/codex-celida",
+    "name" : "CODEX_CELIDA"
+  },
+  {
+    "id" : "PopulationPatientsICUSedationGoal",
+    "type" : "EvidenceVariable",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-Sedation-goal/population/patients-icu-sedation-goal",
+    "name" : "ICU_Patients_Sedation_Goal"
+  },
+  {
+    "id" : "RecommendationPatientsICUSedationGoal",
+    "type" : "PlanDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-Sedation-goal/recommendation/patients-icu-sedation-goal",
+    "version" : "1.0",
+    "name" : "Recommendation10-Sedation-Goal-RASS"
+  },
+  {
+    "id" : "InterventionPatientsICUDAASMonitoring",
+    "type" : "PlanDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-daas-monitoring/intervention-plan/patients-icu-daas-monitoring",
+    "version" : "1.0",
+    "name" : "Intervention_Plan_ICU_Patients_DAAS_Monitoring"
+  },
+  {
+    "id" : "PopulationPatientsICUDAASMonitoring",
+    "type" : "EvidenceVariable",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-daas-monitoring/population/patients-icu-daas-monitoring",
+    "name" : "ICU_patients-DASMonitoring"
+  },
+  {
+    "id" : "RecommendationPatientsICUDAASMonitoring",
+    "type" : "PlanDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-daas-monitoring/recommendation/patients-icu-daas-monitoring",
+    "version" : "1.0",
+    "name" : "Recommendation8-DAASMonitoring"
+  },
+  {
+    "id" : "AnxietyMonitoringSTAI",
+    "type" : "ActivityDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-daas-monitoring/recommended-action/anxiety-monitoring-NuDesc",
+    "version" : "1.0",
+    "name" : "AnxietyMonitoringWithSTAIPlan"
+  },
+  {
+    "id" : "InterventionPatientsICUDeliriumMonitoring",
+    "type" : "PlanDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-delirium-monitoring/intervention-plan/patients-icu-delirium-monitoring",
+    "version" : "1.0",
+    "name" : "Intervention_Plan_ICU_Patients_Delirium_Monitoring"
+  },
+  {
+    "id" : "PopulationPatientsICUDeliriumMonitoring",
+    "type" : "EvidenceVariable",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-delirium-monitoring/population/patients-icu-delirium-monitoring",
+    "name" : "ICU_patients-DeliriumMonitoring"
+  },
+  {
+    "id" : "RecommendationPatientsICUDeliriumMonitoring",
+    "type" : "PlanDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-delirium-monitoring/recommendation/patients-icu-delirium-monitoring",
+    "version" : "1.0",
+    "name" : "Recommendation3-DeliriumMonitoring"
+  },
+  {
+    "id" : "DeliriumMonitoringCAMICU",
+    "type" : "ActivityDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-delirium-monitoring/recommended-action/delirium-monitoring-CAMICU",
+    "version" : "1.0",
+    "name" : "DeliriumMonitoringWithCAMICUPlan"
+  },
+  {
+    "id" : "DeliriumMonitoringNuDESC",
+    "type" : "ActivityDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-delirium-monitoring/recommended-action/delirium-monitoring-NuDesc",
+    "version" : "1.0",
+    "name" : "DeliriumMonitoringWithNuDESCPlan"
+  },
+  {
+    "id" : "InterventionPatientsICUnoDeliriumGoal",
+    "type" : "PlanDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-no-delirium-goal/intervention-plan/patients-icu-no-delirium",
+    "version" : "7.0",
+    "name" : "Intervention_Plan_ICU_Patients_no_Delirium_Goal"
+  },
+  {
+    "id" : "PopulationPatientsICUnoDeliriumGoal",
+    "type" : "EvidenceVariable",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-no-delirium-goal/population/patients-icu-no-delirium-goal",
+    "name" : "ICU_Patients_no_Delirium_Goal"
+  },
+  {
+    "id" : "RecommendationPatientsICUnoDeliriumGoal",
+    "type" : "PlanDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-no-delirium-goal/recommendation/patients-icu-no-delirium-goal",
+    "version" : "1.0",
+    "name" : "Recommendation11-Delirium-Goal"
+  },
+  {
+    "id" : "DeliriumMonitoringCAMICUnegative",
+    "type" : "ActivityDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-no-delirium-goal/recommended-action/delirium-monitoring-CAMICU",
+    "version" : "1.0",
+    "name" : "DeliriumMonitoringWithCAMICUPlan"
+  },
+  {
+    "id" : "InterventionPatientsICUNRSgoal",
+    "type" : "PlanDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-nrs-goal<4/intervention-plan/patients-icu-nrs-goal<4",
+    "version" : "7.0",
+    "name" : "Intervention_Plan_ICU_Patients_NRS_Goal<4"
+  },
+  {
+    "id" : "PopulationPatientsICUNRSgoal",
+    "type" : "EvidenceVariable",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-nrs-goal<4/population/patients-icu-nrs-goal<4",
+    "name" : "ICU_Patients_NRS_Goal<4"
+  },
+  {
+    "id" : "RecommendationPatientsICUNRSgoal",
+    "type" : "PlanDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-nrs-goal<4/recommendation/patients-icu-nrs-goal<4",
+    "version" : "1.0",
+    "name" : "Recommendation9-NRS<4"
+  },
+  {
+    "id" : "InterventionPatientsICUPainMonitoring",
+    "type" : "PlanDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-pain-monitoring/intervention-plan/patients-icu-pain-monitoring",
+    "version" : "7.0",
+    "name" : "Intervention_Plan_ICU_Patients_Pain_Monitoring"
+  },
+  {
+    "id" : "RecommendationPatientsICUPainMonitoring",
+    "type" : "PlanDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-pain-monitoring/recommendation/patients-icu-pain-monitoring",
+    "version" : "1.0",
+    "name" : "Recommendation1-PainMonitoring"
+  },
+  {
+    "id" : "PainMonitoringBPS",
+    "type" : "ActivityDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-pain-monitoring/recommended-action/pain-monitoring-BPS",
+    "version" : "0.1",
+    "name" : "PainMonitoringWithBPSPlan"
+  },
+  {
+    "id" : "PainMonitoringCPOT",
+    "type" : "ActivityDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-pain-monitoring/recommended-action/pain-monitoring-CPOT",
+    "version" : "0.1",
+    "name" : "PainMonitoringWithCPOTPlan"
+  },
+  {
+    "id" : "PainMonitoringFPS-R",
+    "type" : "ActivityDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-pain-monitoring/recommended-action/pain-monitoring-FPS-R",
+    "version" : "0.1",
+    "name" : "PainMonitoringWithFPS-RPlan"
+  },
+  {
+    "id" : "PainMonitoringNRS",
+    "type" : "ActivityDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-pain-monitoring/recommended-action/pain-monitoring-NRS",
+    "version" : "0.1",
+    "name" : "PainMonitoringWithNRSPlan"
+  },
+  {
+    "id" : "PainMonitoringVAS",
+    "type" : "ActivityDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-pain-monitoring/recommended-action/pain-monitoring-VAS",
+    "version" : "0.1",
+    "name" : "PainMonitoringWithVASPlan"
+  },
+  {
+    "id" : "PainMonitoringVRS",
+    "type" : "ActivityDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-pain-monitoring/recommended-action/pain-monitoring-VRS",
+    "version" : "0.1",
+    "name" : "PainMonitoringWithVRSPlan"
+  },
+  {
+    "id" : "PopulationPatientsICUPainMonitoring",
+    "type" : "EvidenceVariable",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-painmonitoring/population/patients-icu-pain-monitoring",
+    "name" : "ICU_Patients_Pain_Monitoring"
+  },
+  {
+    "id" : "InterventionPatientsICUSedationGoal",
+    "type" : "PlanDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-sedation-goal/intervention-plan/patients-icu-sedation-goal",
+    "version" : "7.0",
+    "name" : "Intervention_Plan_ICU_Patients_Sedation_Goal"
+  },
+  {
+    "id" : "InterventionPatientsICUSedationMonitoring",
+    "type" : "PlanDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-sedation-monitoring/intervention-plan/patients-icu-sedation-monitoring",
+    "version" : "7.0",
+    "name" : "Intervention_Plan_ICU_Patients_Sedation_Monitoring"
+  },
+  {
+    "id" : "RecommendationPatientsICUSedationMonitoring",
+    "type" : "PlanDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-sedation-monitoring/recommendation/patients-icu-sedation-monitoring",
+    "version" : "1.0",
+    "name" : "Recommendation2-SedationMonitoring"
+  },
+  {
+    "id" : "SedationMonitoringRASS",
+    "type" : "ActivityDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-sedation-monitoring/recommended-action/sedation-monitoring-RASS",
+    "version" : "1.0",
+    "name" : "SedationMonitoringWithRASSPlan"
+  },
+  {
+    "id" : "PopulationPatientsICUSedationMonitoring",
+    "type" : "EvidenceVariable",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-sedationmonitoring/population/patients-icu-sedation-monitoring",
+    "name" : "ICU_Patients_Sedation_Monitoring"
+  },
+  {
+    "id" : "template.cpg-on-ebmonfhir.netzwerk-universitaetsmedizin.de",
+    "type" : "ImplementationGuide",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ImplementationGuide/template.cpg-on-ebmonfhir.netzwerk-universitaetsmedizin.de",
+    "version" : "0.0.1-snapshot",
+    "name" : "CPGonEBMonFHIRtemplate"
+  }
+]

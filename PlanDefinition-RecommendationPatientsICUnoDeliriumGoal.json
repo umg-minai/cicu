@@ -1,0 +1,45 @@
+{
+  "resourceType" : "PlanDefinition",
+  "id" : "RecommendationPatientsICUnoDeliriumGoal",
+  "meta" : {
+    "profile" : ["https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PlanDefinition</b><a name=\"RecommendationPatientsICUnoDeliriumGoal\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PlanDefinition &quot;RecommendationPatientsICUnoDeliriumGoal&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"file:///github/workspace/output/StructureDefinition-recommendation.html\">Recommendation</a></p></div><p><b>knowledgeCapability</b>: computable</p><p><b>knowledgeRepresentationLevel</b>: structured</p><p><b>url</b>: <code>https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-no-delirium-goal/recommendation/patients-icu-no-delirium-goal</code></p><p><b>version</b>: 1.0</p><p><b>name</b>: Recommendation11-Delirium-Goal</p><p><b>title</b>: Delirium Intervention for Population: ICU Patients Delirium Goal</p><p><b>type</b>: Workflow Definition <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-plan-definition-type.html\">PlanDefinitionType</a>#workflow-definition)</span></p><p><b>status</b>: active</p><p><b>experimental</b>: true</p><p><b>date</b>: 2023-11</p><p><b>description</b>: ICU Patients should be delirium free</p><h3>Actions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Title</b></td><td><b>Description</b></td><td><b>Code</b></td><td><b>SelectionBehavior</b></td><td><b>Definition[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>Intervention_Plan_ICU_Patients_No_Delirium_Goal</td><td>Intervention plan for ICU Patients: Delirium Goal is no Delirium</td><td>Guideline-based Care <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/uv/cpg/STU1/CodeSystem-cpg-common-process.html\">CPG Common Process</a>#guideline-based-care)</span></td><td>at-most-one</td><td><a href=\"PlanDefinition-InterventionPatientsICUnoDeliriumGoal.html\">Intervention plan for ICU Patients: no Delirium Goal</a></td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode" : "computable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+    "valueCode" : "structured"
+  }],
+  "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-no-delirium-goal/recommendation/patients-icu-no-delirium-goal",
+  "version" : "1.0",
+  "name" : "Recommendation11-Delirium-Goal",
+  "title" : "Delirium Intervention for Population: ICU Patients Delirium Goal",
+  "type" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/plan-definition-type",
+      "code" : "workflow-definition"
+    }]
+  },
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2023-11",
+  "description" : "ICU Patients should be delirium free",
+  "action" : [{
+    "title" : "Intervention_Plan_ICU_Patients_No_Delirium_Goal",
+    "description" : "Intervention plan for ICU Patients: Delirium Goal is no Delirium",
+    "code" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+        "code" : "guideline-based-care"
+      }]
+    },
+    "selectionBehavior" : "at-most-one",
+    "definitionCanonical" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-no-delirium-goal/intervention-plan/patients-icu-no-delirium"
+  }]
+}

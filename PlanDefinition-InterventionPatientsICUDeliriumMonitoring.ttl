@@ -1,0 +1,88 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/PlanDefinition/InterventionPatientsICUDeliriumMonitoring> a fhir:PlanDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "InterventionPatientsICUDeliriumMonitoring"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-plan"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-plan>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PlanDefinition</b><a name=\"InterventionPatientsICUDeliriumMonitoring\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PlanDefinition &quot;InterventionPatientsICUDeliriumMonitoring&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"file:///github/workspace/output/StructureDefinition-recommendation-plan.html\">Recommendation Plan</a></p></div><p><b>knowledgeCapability</b>: computable</p><p><b>knowledgeRepresentationLevel</b>: structured</p><p><b>partOf</b>: <a href=\"PlanDefinition-RecommendationPatientsICUDeliriumMonitoring.html\">Intervention for Population: ICU Patients - Delirium Monitoring</a></p><p><b>url</b>: <code>https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-delirium-monitoring/intervention-plan/patients-icu-delirium-monitoring</code></p><p><b>identifier</b>: id: InterventionPlanforICUPatientsDeliriumMonitoring</p><p><b>version</b>: 1.0</p><p><b>name</b>: Intervention_Plan_ICU_Patients_Delirium_Monitoring</p><p><b>title</b>: Intervention plan for ICU Patients: Delirium Monitoring with NuDESC or CAMICU</p><p><b>type</b>: ECA Rule <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-plan-definition-type.html\">PlanDefinitionType</a>#eca-rule)</span></p><p><b>status</b>: active</p><p><b>experimental</b>: true</p><p><b>subject</b>: <a href=\"EvidenceVariable-PopulationPatientsICUDeliriumMonitoring.html\">Population: ICU Patients: Delirium Monitoring</a></p><p><b>date</b>: 2023-10</p><p><b>publisher</b>: NUM CODEX+ CELIDA</p><p><b>description</b>: In ICU Patients Findings ind Delirium Monitoring should be documented at least once per shift</p><blockquote><p><b>action</b></p><p><b>code</b>: Evaluation procedure (procedure) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#386053000)</span></p><p><b>selectionBehavior</b>: one-or-more</p><p><b>definition</b>: <a href=\"ActivityDefinition-DeliriumMonitoringCAMICU.html\">Delirium Monitoring with CAMICU</a></p></blockquote><blockquote><p><b>action</b></p><p><b>code</b>: Evaluation procedure (procedure) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#386053000)</span></p><p><b>selectionBehavior</b>: one-or-more</p><p><b>definition</b>: <a href=\"ActivityDefinition-DeliriumMonitoringNuDESC.html\">Delirium Monitoring with NuDESC</a></p></blockquote></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "computable" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "structured" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-partOf"^^xsd:anyURI ] ;
+     fhir:value [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-delirium-monitoring/recommendation/patients-icu-delirium-monitoring"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-delirium-monitoring/recommendation/patients-icu-delirium-monitoring>
+     ]
+  ] ) ; # 
+  fhir:url [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-delirium-monitoring/intervention-plan/patients-icu-delirium-monitoring"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "InterventionPlanforICUPatientsDeliriumMonitoring" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "1.0"] ; # 
+  fhir:name [ fhir:v "Intervention_Plan_ICU_Patients_Delirium_Monitoring"] ; # 
+  fhir:title [ fhir:v "Intervention plan for ICU Patients: Delirium Monitoring with NuDESC or CAMICU"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/plan-definition-type"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "eca-rule" ]
+     ] )
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:subject [
+     fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-delirium-monitoring/population/patients-icu-delirium-monitoring"^^xsd:anyURI ;
+     fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-delirium-monitoring/population/patients-icu-delirium-monitoring>
+  ] ; # 
+  fhir:date [ fhir:v "2023-10"^^xsd:gYearMonth] ; # 
+  fhir:publisher [ fhir:v "NUM CODEX+ CELIDA"] ; # 
+  fhir:description [ fhir:v "In ICU Patients Findings ind Delirium Monitoring should be documented at least once per shift"] ; # 
+  fhir:action ( [
+     fhir:code [
+       fhir:coding ( [
+         a sct:386053000 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "386053000" ] ;
+         fhir:display [ fhir:v "Evaluation procedure (procedure)" ]
+       ] )
+     ] ;
+     fhir:selectionBehavior [ fhir:v "one-or-more" ] ;
+     fhir:definition [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-delirium-monitoring/recommended-action/delirium-monitoring-CAMICU"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-delirium-monitoring/recommended-action/delirium-monitoring-CAMICU>
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a sct:386053000 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "386053000" ] ;
+         fhir:display [ fhir:v "Evaluation procedure (procedure)" ]
+       ] )
+     ] ;
+     fhir:selectionBehavior [ fhir:v "one-or-more" ] ;
+     fhir:definition [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-delirium-monitoring/recommended-action/delirium-monitoring-NuDesc"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-delirium-monitoring/recommended-action/delirium-monitoring-NuDesc>
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

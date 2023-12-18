@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PlanDefinition xmlns="http://hl7.org/fhir">
+  <id value="RecommendationPatientsICUNRSgoal"/>
+  <meta>
+    <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: PlanDefinition</b><a name="RecommendationPatientsICUNRSgoal"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource PlanDefinition &quot;RecommendationPatientsICUNRSgoal&quot; </p><p style="margin-bottom: 0px">Profile: <a href="file:///github/workspace/output/StructureDefinition-recommendation.html">Recommendation</a></p></div><p><b>knowledgeCapability</b>: computable</p><p><b>knowledgeRepresentationLevel</b>: structured</p><p><b>url</b>: <code>https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-nrs-goal&lt;4/recommendation/patients-icu-nrs-goal&lt;4</code></p><p><b>version</b>: 1.0</p><p><b>name</b>: Recommendation9-NRS&lt;4</p><p><b>title</b>: NRS Intervention for Population: ICU Patients NRS goal &lt;4</p><p><b>type</b>: Workflow Definition <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.3.0/CodeSystem-plan-definition-type.html">PlanDefinitionType</a>#workflow-definition)</span></p><p><b>status</b>: active</p><p><b>experimental</b>: true</p><p><b>date</b>: 2023-11-17</p><p><b>description</b>: NRS in ICU Patients should be &lt;4</p><h3>Actions</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Title</b></td><td><b>Description</b></td><td><b>Code</b></td><td><b>SelectionBehavior</b></td><td><b>Definition[x]</b></td></tr><tr><td style="display: none">*</td><td>Intervention_Plan_ICU_Patients_NRS_goal</td><td>Intervention plan for ICU Patients: NRS goal &lt;4</td><td>Guideline-based Care <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://hl7.org/fhir/uv/cpg/STU1/CodeSystem-cpg-common-process.html">CPG Common Process</a>#guideline-based-care)</span></td><td>at-most-one</td><td><a href="PlanDefinition-InterventionPatientsICUNRSgoal.html">Intervention plan for ICU Patients: NRS goal &lt;4</a></td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+    <valueCode value="computable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel">
+    <valueCode value="structured"/>
+  </extension>
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-nrs-goal&lt;4/recommendation/patients-icu-nrs-goal&lt;4"/>
+  <version value="1.0"/>
+  <name value="Recommendation9-NRS&lt;4"/>
+  <title value="NRS Intervention for Population: ICU Patients NRS goal &lt;4"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/plan-definition-type"/>
+      <code value="workflow-definition"/>
+    </coding>
+  </type>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2023-11-17"/>
+  <description value="NRS in ICU Patients should be &lt;4"/>
+  <action>
+    <title value="Intervention_Plan_ICU_Patients_NRS_goal"/>
+    <description value="Intervention plan for ICU Patients: NRS goal &lt;4"/>
+    <code>
+      <coding>
+        <system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process"/>
+        <code value="guideline-based-care"/>
+      </coding>
+    </code>
+    <selectionBehavior value="at-most-one"/>
+    <definitionCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-nrs-goal&lt;4/intervention-plan/patients-icu-nrs-goal&lt;4"/>
+  </action>
+</PlanDefinition>

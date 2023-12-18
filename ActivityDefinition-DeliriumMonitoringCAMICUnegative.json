@@ -1,0 +1,42 @@
+{
+  "resourceType" : "ActivityDefinition",
+  "id" : "DeliriumMonitoringCAMICUnegative",
+  "meta" : {
+    "profile" : ["https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/assessment-action"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ActivityDefinition</b><a name=\"DeliriumMonitoringCAMICUnegative\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ActivityDefinition &quot;DeliriumMonitoringCAMICUnegative&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"file:///github/workspace/output/StructureDefinition-assessment-action.html\">Assessment Action</a></p></div><p><b>knowledgeCapability</b>: computable</p><p><b>knowledgeRepresentationLevel</b>: structured</p><p><b>url</b>: <code>https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-no-delirium-goal/recommended-action/delirium-monitoring-CAMICU</code></p><p><b>version</b>: 1.0</p><p><b>name</b>: DeliriumMonitoringWithCAMICUPlan</p><p><b>title</b>: Delirium Monitoring with CAMICU</p><p><b>status</b>: active</p><p><b>experimental</b>: true</p><p><b>subject</b>: Patient <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/R5/codesystem-fhir-types.html\">All FHIR Types</a>#Patient)</span></p><p><b>date</b>: 2023-12-18 10:04:10+0000</p><p><b>publisher</b>: NUM CODEX+ CELIDA</p><p><b>description</b>: Delirium monitoring in ICU Patients with CAMIU</p><p><b>kind</b>: ServiceRequest</p><p><b>code</b>: Signs and symptoms of delirium (from CAM) [CAM.MDSv3] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#54627-5)</span></p></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode" : "computable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+    "valueCode" : "structured"
+  }],
+  "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-no-delirium-goal/recommended-action/delirium-monitoring-CAMICU",
+  "version" : "1.0",
+  "name" : "DeliriumMonitoringWithCAMICUPlan",
+  "title" : "Delirium Monitoring with CAMICU",
+  "status" : "active",
+  "experimental" : true,
+  "subjectCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://hl7.org/fhir/fhir-types",
+      "code" : "Patient"
+    }]
+  },
+  "date" : "2023-12-18T10:04:10+00:00",
+  "publisher" : "NUM CODEX+ CELIDA",
+  "description" : "Delirium monitoring in ICU Patients with CAMIU",
+  "kind" : "ServiceRequest",
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "54627-5",
+      "display" : "Signs and symptoms of delirium (from CAM) [CAM.MDSv3]"
+    }]
+  }
+}

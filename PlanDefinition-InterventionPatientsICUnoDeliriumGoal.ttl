@@ -1,0 +1,108 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/PlanDefinition/InterventionPatientsICUnoDeliriumGoal> a fhir:PlanDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "InterventionPatientsICUnoDeliriumGoal"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-plan"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-plan>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PlanDefinition</b><a name=\"InterventionPatientsICUnoDeliriumGoal\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PlanDefinition &quot;InterventionPatientsICUnoDeliriumGoal&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"file:///github/workspace/output/StructureDefinition-recommendation-plan.html\">Recommendation Plan</a></p></div><p><b>knowledgeCapability</b>: computable</p><p><b>knowledgeRepresentationLevel</b>: structured</p><p><b>partOf</b>: <a href=\"PlanDefinition-RecommendationPatientsICUnoDeliriumGoal.html\">Delirium Intervention for Population: ICU Patients Delirium Goal</a></p><p><b>url</b>: <code>https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-no-delirium-goal/intervention-plan/patients-icu-no-delirium</code></p><p><b>identifier</b>: id: InterventionPlanforICUPAtientsnoDeliriumGoal</p><p><b>version</b>: 7.0</p><p><b>name</b>: Intervention_Plan_ICU_Patients_no_Delirium_Goal</p><p><b>title</b>: Intervention plan for ICU Patients: no Delirium Goal</p><p><b>type</b>: ECA Rule <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-plan-definition-type.html\">PlanDefinitionType</a>#eca-rule)</span></p><p><b>status</b>: active</p><p><b>experimental</b>: true</p><p><b>subject</b>: <a href=\"EvidenceVariable-PopulationPatientsICUnoDeliriumGoal.html\">Population: ICU Patients no Delirium Goal</a></p><p><b>date</b>: 2023-09</p><p><b>publisher</b>: NUM CODEX+ CELIDA</p><p><b>description</b>: Intensive care patients should be delirium free</p><blockquote><p><b>goal</b></p><blockquote><p><b>id</b></p>dlirium-management-goal</blockquote><p><b>category</b>: Assessment scales (assessment scale) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#273249006)</span></p><p><b>description</b>: CAM-ICU should be negativ <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><h3>Targets</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Measure</b></td><td><b>Detail[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>Signs and symptoms of delirium (from CAM) [CAM.MDSv3] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#54627-5)</span></td><td>Negative (qualifier value) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#260385009)</span></td></tr></table></blockquote><h3>Actions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>SelectionBehavior</b></td><td><b>Definition[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>Evaluation procedure (procedure) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#386053000)</span></td><td>one-or-more</td><td><a href=\"ActivityDefinition-DeliriumMonitoringCAMICUnegative.html\">Delirium Monitoring with CAMICU</a></td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "computable" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "structured" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-partOf"^^xsd:anyURI ] ;
+     fhir:value [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-no-delirium-goal/recommendation/patients-icu-no-delirium-goal"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-no-delirium-goal/recommendation/patients-icu-no-delirium-goal>
+     ]
+  ] ) ; # 
+  fhir:url [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-no-delirium-goal/intervention-plan/patients-icu-no-delirium"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "InterventionPlanforICUPAtientsnoDeliriumGoal" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "7.0"] ; # 
+  fhir:name [ fhir:v "Intervention_Plan_ICU_Patients_no_Delirium_Goal"] ; # 
+  fhir:title [ fhir:v "Intervention plan for ICU Patients: no Delirium Goal"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/plan-definition-type"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "eca-rule" ]
+     ] )
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:subject [
+     fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-no-delirium-goal/population/patients-icu-no-delirium-goal"^^xsd:anyURI ;
+     fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-no-delirium-goal/population/patients-icu-no-delirium-goal>
+  ] ; # 
+  fhir:date [ fhir:v "2023-09"^^xsd:gYearMonth] ; # 
+  fhir:publisher [ fhir:v "NUM CODEX+ CELIDA"] ; # 
+  fhir:description [ fhir:v "Intensive care patients should be delirium free"] ; # 
+  fhir:goal ( [
+     fhir:id [ fhir:v "dlirium-management-goal" ] ;
+     fhir:category [
+       fhir:coding ( [
+         a sct:273249006 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "273249006" ] ;
+         fhir:display [ fhir:v "Assessment scales (assessment scale)" ]
+       ] )
+     ] ;
+     fhir:description [
+       fhir:text [ fhir:v "CAM-ICU should be negativ" ]
+     ] ;
+     fhir:target ( [
+       fhir:measure [
+         fhir:coding ( [
+           a loinc:54627-5 ;
+           fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "54627-5" ] ;
+           fhir:display [ fhir:v "Signs and symptoms of delirium (from CAM) [CAM.MDSv3]" ]
+         ] )
+       ] ;
+       fhir:detail [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           a sct:260385009 ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "260385009" ] ;
+           fhir:display [ fhir:v "Negative (qualifier value)" ]
+         ] )
+       ]
+     ] )
+  ] ) ; # 
+  fhir:action ( [
+     fhir:code [
+       fhir:coding ( [
+         a sct:386053000 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "386053000" ] ;
+         fhir:display [ fhir:v "Evaluation procedure (procedure)" ]
+       ] )
+     ] ;
+     fhir:selectionBehavior [ fhir:v "one-or-more" ] ;
+     fhir:definition [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-no-delirium-goal/recommended-action/delirium-monitoring-CAMICU"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-no-delirium-goal/recommended-action/delirium-monitoring-CAMICU>
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

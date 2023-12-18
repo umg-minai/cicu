@@ -1,0 +1,12 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/CodeSystem/codex-celida",
+      "version" : null,
+      "status" : "draft",
+      "name" : "CODEX_CELIDA",
+      "title" : "CODEX-CELIDA",
+      "description" : "Concepts required in recommendations that are not defined elsewhere"
+    }
+  ]
+}

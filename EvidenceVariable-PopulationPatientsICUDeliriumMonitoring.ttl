@@ -1,0 +1,61 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/EvidenceVariable/PopulationPatientsICUDeliriumMonitoring> a fhir:EvidenceVariable ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "PopulationPatientsICUDeliriumMonitoring"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-eligibility-criteria"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-eligibility-criteria>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: EvidenceVariable</b><a name=\"PopulationPatientsICUDeliriumMonitoring\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource EvidenceVariable &quot;PopulationPatientsICUDeliriumMonitoring&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"file:///github/workspace/output/StructureDefinition-recommendation-eligibility-criteria.html\">Recommendation Eligibility Criteria</a></p></div><p><b>url</b>: <code>https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-delirium-monitoring/population/patients-icu-delirium-monitoring</code></p><p><b>identifier</b>: id: ICU_Patients_Delirium_Monitoring</p><p><b>name</b>: ICU_patients-DeliriumMonitoring</p><p><b>title</b>: Population: ICU Patients: Delirium Monitoring</p><p><b>status</b>: active</p><p><b>date</b>: 2023-12-18 10:04:10+0000</p><p><b>description</b>: ICU Patients: Delirium Monitoring</p><blockquote><p><b>characteristic</b></p><blockquote><p><b>definitionByCombination</b></p><p><b>code</b>: all-of</p><blockquote><p><b>characteristic</b></p><p><b>linkId</b>: intensive-care-treatment</p><p><b>exclude</b>: false</p><blockquote><p><b>definitionByTypeAndValue</b></p></blockquote></blockquote></blockquote></blockquote></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-delirium-monitoring/population/patients-icu-delirium-monitoring"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://www.ceosys.de"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "ICU_Patients_Delirium_Monitoring" ]
+  ] ) ; # 
+  fhir:name [ fhir:v "ICU_patients-DeliriumMonitoring"] ; # 
+  fhir:title [ fhir:v "Population: ICU Patients: Delirium Monitoring"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2023-12-18T10:04:10+00:00"^^xsd:dateTime] ; # 
+  fhir:description [ fhir:v "ICU Patients: Delirium Monitoring"] ; # 
+  fhir:characteristic ( [
+     fhir:definitionByCombination [
+       fhir:code [ fhir:v "all-of" ] ;
+       fhir:characteristic ( [
+         fhir:linkId [ fhir:v "intensive-care-treatment" ] ;
+         fhir:exclude [ fhir:v "false"^^xsd:boolean ] ;
+         fhir:definitionByTypeAndValue [
+           fhir:type [
+             fhir:coding ( [
+               a loinc:78030-4 ;
+               fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "78030-4" ] ;
+               fhir:display [ fhir:v "Episode of care Type" ]
+             ] )
+           ] ;
+           fhir:value [
+             a fhir:CodeableConcept ;
+             fhir:coding ( [
+               fhir:system [ fhir:v "http://fhir.de/CodeSystem/kontaktart-de"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "intensivstationaer" ] ;
+               fhir:display [ fhir:v "Intensivstationär" ]
+             ] )
+           ]
+         ]
+       ] )
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

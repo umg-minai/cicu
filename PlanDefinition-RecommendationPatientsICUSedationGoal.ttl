@@ -1,0 +1,59 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/PlanDefinition/RecommendationPatientsICUSedationGoal> a fhir:PlanDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "RecommendationPatientsICUSedationGoal"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PlanDefinition</b><a name=\"RecommendationPatientsICUSedationGoal\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PlanDefinition &quot;RecommendationPatientsICUSedationGoal&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"file:///github/workspace/output/StructureDefinition-recommendation.html\">Recommendation</a></p></div><p><b>knowledgeCapability</b>: computable</p><p><b>knowledgeRepresentationLevel</b>: structured</p><p><b>url</b>: <code>https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-Sedation-goal/recommendation/patients-icu-sedation-goal</code></p><p><b>version</b>: 1.0</p><p><b>name</b>: Recommendation10-Sedation-Goal-RASS</p><p><b>title</b>: RASS Intervention for Population: Sedation Goal RASS</p><p><b>type</b>: Workflow Definition <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-plan-definition-type.html\">PlanDefinitionType</a>#workflow-definition)</span></p><p><b>status</b>: active</p><p><b>experimental</b>: true</p><p><b>date</b>: 2023-08-13</p><p><b>description</b>: RASS in ICU Patients should be 0 or 1</p><h3>Actions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Title</b></td><td><b>Description</b></td><td><b>Code</b></td><td><b>SelectionBehavior</b></td><td><b>Definition[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>Intervention_Plan_ICU_Patients_Sedation_goal</td><td>Intervention plan for ICU Patients: Sedation Goal RASS 0 to -1</td><td>Guideline-based Care <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/uv/cpg/STU1/CodeSystem-cpg-common-process.html\">CPG Common Process</a>#guideline-based-care)</span></td><td>at-most-one</td><td><a href=\"PlanDefinition-InterventionPatientsICUSedationGoal.html\">Intervention plan for ICU Patients:  Sedation Goal is RASS 0 to -1, with exeption for specificaly indicated deeper sedation</a></td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "computable" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "structured" ]
+  ] ) ; # 
+  fhir:url [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-Sedation-goal/recommendation/patients-icu-sedation-goal"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0"] ; # 
+  fhir:name [ fhir:v "Recommendation10-Sedation-Goal-RASS"] ; # 
+  fhir:title [ fhir:v "RASS Intervention for Population: Sedation Goal RASS"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/plan-definition-type"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "workflow-definition" ]
+     ] )
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-08-13"^^xsd:date] ; # 
+  fhir:description [ fhir:v "RASS in ICU Patients should be 0 or 1"] ; # 
+  fhir:action ( [
+     fhir:title [ fhir:v "Intervention_Plan_ICU_Patients_Sedation_goal" ] ;
+     fhir:description [ fhir:v "Intervention plan for ICU Patients: Sedation Goal RASS 0 to -1" ] ;
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "guideline-based-care" ]
+       ] )
+     ] ;
+     fhir:selectionBehavior [ fhir:v "at-most-one" ] ;
+     fhir:definition [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-sedation-goal/intervention-plan/patients-icu-sedation-goal"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-sedation-goal/intervention-plan/patients-icu-sedation-goal>
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

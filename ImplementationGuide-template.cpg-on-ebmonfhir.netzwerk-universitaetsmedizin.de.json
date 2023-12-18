@@ -1,0 +1,820 @@
+{
+  "resourceType" : "ImplementationGuide",
+  "id" : "template.cpg-on-ebmonfhir.netzwerk-universitaetsmedizin.de",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>CPGonEBMonFHIRtemplate</h2><p>The official URL for this implementation guide is: </p><pre>https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ImplementationGuide/template.cpg-on-ebmonfhir.netzwerk-universitaetsmedizin.de</pre></div>"
+  },
+  "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ImplementationGuide/template.cpg-on-ebmonfhir.netzwerk-universitaetsmedizin.de",
+  "version" : "0.0.1-snapshot",
+  "name" : "CPGonEBMonFHIRtemplate",
+  "title" : "CPG-on-EBMonFHIR template",
+  "status" : "draft",
+  "date" : "2023-12-18T10:04:10+00:00",
+  "publisher" : "Example",
+  "contact" : [{
+    "name" : "Example",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.example.com"
+    }]
+  }],
+  "packageId" : "template.cpg-on-ebmonfhir.netzwerk-universitaetsmedizin.de",
+  "license" : "CC0-1.0",
+  "fhirVersion" : ["5.0.0"],
+  "dependsOn" : [{
+    "id" : "hl7tx",
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment",
+      "valueMarkdown" : "Automatically added as a dependency - all IGs depend on HL7 Terminology"
+    }],
+    "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
+    "packageId" : "hl7.terminology.r5",
+    "version" : "5.3.0"
+  },
+  {
+    "id" : "hl7ext",
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment",
+      "valueMarkdown" : "Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"
+    }],
+    "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
+    "packageId" : "hl7.fhir.uv.extensions.r5",
+    "version" : "1.0.0"
+  },
+  {
+    "id" : "de_netzwerk_universitaetsmedizin_ebm_cpg",
+    "uri" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ImplementationGuide/de.netzwerk-universitaetsmedizin.ebm-cpg",
+    "packageId" : "de.netzwerk-universitaetsmedizin.ebm-cpg",
+    "version" : "0.7.1-snapshot"
+  }],
+  "definition" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
+      "valueCode" : "hl7.fhir.uv.tools#current"
+    }],
+    "resource" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ActivityDefinition"
+      }],
+      "reference" : {
+        "reference" : "ActivityDefinition/AnxietyMonitoringSTAI"
+      },
+      "name" : "Anxiety Monitoring with STAI",
+      "description" : "Anxiety Monitoring in ICU Patients with STAI",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/codex-celida"
+      },
+      "name" : "CODEX-CELIDA",
+      "description" : "Concepts required in recommendations that are not defined elsewhere",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ActivityDefinition"
+      }],
+      "reference" : {
+        "reference" : "ActivityDefinition/DeliriumMonitoringCAMICUnegative"
+      },
+      "name" : "Delirium Monitoring with CAMICU",
+      "description" : "Delirium Monitoring in ICU Patients with CAMICU",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ActivityDefinition"
+      }],
+      "reference" : {
+        "reference" : "ActivityDefinition/DeliriumMonitoringCAMICU"
+      },
+      "name" : "Delirium Monitoring with CAMICU",
+      "description" : "Delirium Monitoring in ICU Patients with RASS",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ActivityDefinition"
+      }],
+      "reference" : {
+        "reference" : "ActivityDefinition/DeliriumMonitoringNuDESC"
+      },
+      "name" : "Delirium Monitoring with NuDESC",
+      "description" : "Delirium Monitoring in ICU Patients with NuDESC",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PlanDefinition"
+      }],
+      "reference" : {
+        "reference" : "PlanDefinition/InterventionPatientsICUDAASMonitoring"
+      },
+      "name" : "Intervention plan for ICU Patients: DAAS Monitoring",
+      "description" : "ICU Patients: DAAS Monitoring",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PlanDefinition"
+      }],
+      "reference" : {
+        "reference" : "PlanDefinition/InterventionPatientsICUDeliriumMonitoring"
+      },
+      "name" : "Intervention plan for ICU Patients: Delirium Monitoring",
+      "description" : "ICU Patients: Delirium Monitoring",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PlanDefinition"
+      }],
+      "reference" : {
+        "reference" : "PlanDefinition/InterventionPatientsICUnoDeliriumGoal"
+      },
+      "name" : "Intervention plan for ICU Patients: no Delirium Goal",
+      "description" : "ICU Patients should be delirium free",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PlanDefinition"
+      }],
+      "reference" : {
+        "reference" : "PlanDefinition/InterventionPatientsICUNRSgoal"
+      },
+      "name" : "Intervention plan for ICU Patients: NRS goal <4",
+      "description" : "In ICU Patients NRS should be <4",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PlanDefinition"
+      }],
+      "reference" : {
+        "reference" : "PlanDefinition/InterventionPatientsICUPainMonitoring"
+      },
+      "name" : "Intervention plan for ICU Patients: Pain Monitoring",
+      "description" : "ICU Patients: Pain Monitoring",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PlanDefinition"
+      }],
+      "reference" : {
+        "reference" : "PlanDefinition/InterventionPatientsICUSedationGoal"
+      },
+      "name" : "Intervention plan for ICU Patients: Sedation goal RASS 0 to -1",
+      "description" : "In ICU Patients RASS should be 0 or -1, with exeption for specificaly indicated deeper sedation",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PlanDefinition"
+      }],
+      "reference" : {
+        "reference" : "PlanDefinition/InterventionPatientsICUSedationMonitoring"
+      },
+      "name" : "Intervention plan for ICU Patients: Sedation Monitoring",
+      "description" : "ICU Patients: Sedation Monitoring",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ActivityDefinition"
+      }],
+      "reference" : {
+        "reference" : "ActivityDefinition/PainMonitoringBPS"
+      },
+      "name" : "Pain Monitoring with BPS",
+      "description" : "Pain Monitoring in ICU Patients with BPS",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ActivityDefinition"
+      }],
+      "reference" : {
+        "reference" : "ActivityDefinition/PainMonitoringCPOT"
+      },
+      "name" : "Pain Monitoring with CPOT",
+      "description" : "Pain Monitoring in ICU Patients with CPOT",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ActivityDefinition"
+      }],
+      "reference" : {
+        "reference" : "ActivityDefinition/PainMonitoringFPS-R"
+      },
+      "name" : "Pain Monitoring with FPS-R",
+      "description" : "Pain Monitoring in ICU Patients with FPS-R",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ActivityDefinition"
+      }],
+      "reference" : {
+        "reference" : "ActivityDefinition/PainMonitoringNRS"
+      },
+      "name" : "Pain Monitoring with NRS",
+      "description" : "Pain Monitoring in ICU Patients with NRS",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ActivityDefinition"
+      }],
+      "reference" : {
+        "reference" : "ActivityDefinition/PainMonitoringVAS"
+      },
+      "name" : "Pain Monitoring with VAS",
+      "description" : "Pain Monitoring in ICU Patients with VAS",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ActivityDefinition"
+      }],
+      "reference" : {
+        "reference" : "ActivityDefinition/PainMonitoringVRS"
+      },
+      "name" : "Pain Monitoring with VRS",
+      "description" : "Pain Monitoring in ICU Patients with VRS",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "EvidenceVariable"
+      }],
+      "reference" : {
+        "reference" : "EvidenceVariable/PopulationPatientsICUnoDeliriumGoal"
+      },
+      "name" : "Population: ICU Patients no Delirium Goal",
+      "description" : "Population for recommendation 9: ICU Patients Delirium Goal is no Delirium",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "EvidenceVariable"
+      }],
+      "reference" : {
+        "reference" : "EvidenceVariable/PopulationPatientsICUNRSgoal"
+      },
+      "name" : "Population: ICU Patients NRS goal <4",
+      "description" : "Population for recommendation 9: ICU Patients NRS goal <4",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "EvidenceVariable"
+      }],
+      "reference" : {
+        "reference" : "EvidenceVariable/PopulationPatientsICUSedationGoal"
+      },
+      "name" : "Population: ICU Patients Sedation goal RASS 0 to -1",
+      "description" : "Population for recommendation 10: ICU Patients Sedation goal RASS 0 to -1",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "EvidenceVariable"
+      }],
+      "reference" : {
+        "reference" : "EvidenceVariable/PopulationPatientsICUDAASMonitoring"
+      },
+      "name" : "Population: ICU Patients: DAAS Monitoring",
+      "description" : "Population for recommendation 8: DAAS Monitoring",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "EvidenceVariable"
+      }],
+      "reference" : {
+        "reference" : "EvidenceVariable/PopulationPatientsICUDeliriumMonitoring"
+      },
+      "name" : "Population: ICU Patients: Delirium Monitoring",
+      "description" : "Population for recommendation 3: Delirium Monitoring",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "EvidenceVariable"
+      }],
+      "reference" : {
+        "reference" : "EvidenceVariable/PopulationPatientsICUPainMonitoring"
+      },
+      "name" : "Population: ICU Patients: Pain Monitoring",
+      "description" : "Population for recommendation 1: ICU Patients Pain Monitoring",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "EvidenceVariable"
+      }],
+      "reference" : {
+        "reference" : "EvidenceVariable/PopulationPatientsICUSedationMonitoring"
+      },
+      "name" : "Population: ICU Patients: Sedation Monitoring",
+      "description" : "Population for recommendation 2: ICU Patients Sedation Monitoring",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PlanDefinition"
+      }],
+      "reference" : {
+        "reference" : "PlanDefinition/RecommendationPatientsICUnoDeliriumGoal"
+      },
+      "name" : "Recommendation: ICU Patients No Delirium Goal",
+      "description" : "Recommendation for ICU Patients: The Delirium Goal is no Dilirium",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PlanDefinition"
+      }],
+      "reference" : {
+        "reference" : "PlanDefinition/RecommendationPatientsICUSedationGoal"
+      },
+      "name" : "Recommendation: ICU Patients Sedation Goal RASS",
+      "description" : "Recommendation for ICU Patients: Sedation Goal RASS is 0 to -1",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PlanDefinition"
+      }],
+      "reference" : {
+        "reference" : "PlanDefinition/RecommendationPatientsICUDAASMonitoring"
+      },
+      "name" : "Recommendation: ICU Patients: DAAS Monitoring",
+      "description" : "Recommendation for ICU Patients: Delir, Anxiety, Analgesia, Sedation Monitoring",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PlanDefinition"
+      }],
+      "reference" : {
+        "reference" : "PlanDefinition/RecommendationPatientsICUDeliriumMonitoring"
+      },
+      "name" : "Recommendation: ICU Patients: Delirium Monitoring",
+      "description" : "Recommendation for ICU Patients: Delirium Monitoring",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PlanDefinition"
+      }],
+      "reference" : {
+        "reference" : "PlanDefinition/RecommendationPatientsICUNRSgoal"
+      },
+      "name" : "Recommendation: ICU Patients: NRS goal <4",
+      "description" : "Recommendation for ICU Patients to archive an NRS goal below 4",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PlanDefinition"
+      }],
+      "reference" : {
+        "reference" : "PlanDefinition/RecommendationPatientsICUPainMonitoring"
+      },
+      "name" : "Recommendation: ICU Patients: Pain Monitoring",
+      "description" : "Recommendation for ICU Patients: Pain Monitoring",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PlanDefinition"
+      }],
+      "reference" : {
+        "reference" : "PlanDefinition/RecommendationPatientsICUSedationMonitoring"
+      },
+      "name" : "Recommendation: ICU Patients: Sedation Monitoring",
+      "description" : "Recommendation for ICU Patients: Sedation Monitoring",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ActivityDefinition"
+      }],
+      "reference" : {
+        "reference" : "ActivityDefinition/SedationMonitoringRASS"
+      },
+      "name" : "Sedation Monitoring with RASS",
+      "description" : "Sedation Monitoring in ICU Patients with RASS",
+      "isExample" : false
+    }],
+    "page" : {
+      "sourceUrl" : "toc.html",
+      "name" : "toc.html",
+      "title" : "Table of Contents",
+      "generation" : "html",
+      "page" : [{
+        "sourceUrl" : "index.html",
+        "name" : "index.html",
+        "title" : "CPG-on-EBMonFHIR template",
+        "generation" : "markdown"
+      },
+      {
+        "sourceUrl" : "downloads.html",
+        "name" : "downloads.html",
+        "title" : "Downloads",
+        "generation" : "html"
+      },
+      {
+        "sourceUrl" : "changelog.html",
+        "name" : "changelog.html",
+        "title" : "Change Log",
+        "generation" : "markdown"
+      }]
+    },
+    "parameter" : [{
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "copyrightyear"
+      },
+      "value" : "2023+"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "releaselabel"
+      },
+      "value" : "ci-build"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "active-tables"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-contact"
+      },
+      "value" : "false"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-jurisdiction"
+      },
+      "value" : "false"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-publisher"
+      },
+      "value" : "false"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-version"
+      },
+      "value" : "false"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "show-inherited-invariants"
+      },
+      "value" : "false"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "usage-stats-opt-out"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "excludexml"
+      },
+      "value" : "false"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "excludejsn"
+      },
+      "value" : "false"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "excludettl"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "excludemap"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "excludeexample"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "extension-domain"
+      },
+      "value" : "https://www.netzwerk-universitaetsmedizin.de"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "extension-domain"
+      },
+      "value" : "https://simplifier.net"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "autoload-resources"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/capabilities"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/examples"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/extensions"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/models"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/operations"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/profiles"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/resources"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/vocabulary"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/maps"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/testing"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/history"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "fsh-generated/resources"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-pages"
+      },
+      "value" : "template/config"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-pages"
+      },
+      "value" : "input/images"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "path-liquid"
+      },
+      "value" : "template/liquid"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "path-liquid"
+      },
+      "value" : "input/liquid"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "path-qa"
+      },
+      "value" : "temp/qa"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "path-temp"
+      },
+      "value" : "temp/pages"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "path-output"
+      },
+      "value" : "output"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-tx-cache"
+      },
+      "value" : "input-cache/txcache"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "path-suppressed-warnings"
+      },
+      "value" : "input/ignoreWarnings.txt"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "path-history"
+      },
+      "value" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/history.html"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "template-html"
+      },
+      "value" : "template-page.html"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "template-md"
+      },
+      "value" : "template-page-md.html"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-context"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-copyright"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-license"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-wg"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "fmm-definition"
+      },
+      "value" : "http://hl7.org/fhir/versions.html#maturity"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "propagate-status"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "excludelogbinaryformat"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "tabbed-snapshots"
+      },
+      "value" : "true"
+    }]
+  }
+}

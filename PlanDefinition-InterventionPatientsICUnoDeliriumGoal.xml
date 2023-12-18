@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PlanDefinition xmlns="http://hl7.org/fhir">
+  <id value="InterventionPatientsICUnoDeliriumGoal"/>
+  <meta>
+    <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-plan"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: PlanDefinition</b><a name="InterventionPatientsICUnoDeliriumGoal"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource PlanDefinition &quot;InterventionPatientsICUnoDeliriumGoal&quot; </p><p style="margin-bottom: 0px">Profile: <a href="file:///github/workspace/output/StructureDefinition-recommendation-plan.html">Recommendation Plan</a></p></div><p><b>knowledgeCapability</b>: computable</p><p><b>knowledgeRepresentationLevel</b>: structured</p><p><b>partOf</b>: <a href="PlanDefinition-RecommendationPatientsICUnoDeliriumGoal.html">Delirium Intervention for Population: ICU Patients Delirium Goal</a></p><p><b>url</b>: <code>https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-no-delirium-goal/intervention-plan/patients-icu-no-delirium</code></p><p><b>identifier</b>: id: InterventionPlanforICUPAtientsnoDeliriumGoal</p><p><b>version</b>: 7.0</p><p><b>name</b>: Intervention_Plan_ICU_Patients_no_Delirium_Goal</p><p><b>title</b>: Intervention plan for ICU Patients: no Delirium Goal</p><p><b>type</b>: ECA Rule <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.3.0/CodeSystem-plan-definition-type.html">PlanDefinitionType</a>#eca-rule)</span></p><p><b>status</b>: active</p><p><b>experimental</b>: true</p><p><b>subject</b>: <a href="EvidenceVariable-PopulationPatientsICUnoDeliriumGoal.html">Population: ICU Patients no Delirium Goal</a></p><p><b>date</b>: 2023-09</p><p><b>publisher</b>: NUM CODEX+ CELIDA</p><p><b>description</b>: Intensive care patients should be delirium free</p><blockquote><p><b>goal</b></p><blockquote><p><b>id</b></p>dlirium-management-goal</blockquote><p><b>category</b>: Assessment scales (assessment scale) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#273249006)</span></p><p><b>description</b>: CAM-ICU should be negativ <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><h3>Targets</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Measure</b></td><td><b>Detail[x]</b></td></tr><tr><td style="display: none">*</td><td>Signs and symptoms of delirium (from CAM) [CAM.MDSv3] <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#54627-5)</span></td><td>Negative (qualifier value) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#260385009)</span></td></tr></table></blockquote><h3>Actions</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td><td><b>SelectionBehavior</b></td><td><b>Definition[x]</b></td></tr><tr><td style="display: none">*</td><td>Evaluation procedure (procedure) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#386053000)</span></td><td>one-or-more</td><td><a href="ActivityDefinition-DeliriumMonitoringCAMICUnegative.html">Delirium Monitoring with CAMICU</a></td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+    <valueCode value="computable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel">
+    <valueCode value="structured"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-partOf">
+    <valueCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-no-delirium-goal/recommendation/patients-icu-no-delirium-goal"/>
+  </extension>
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-no-delirium-goal/intervention-plan/patients-icu-no-delirium"/>
+  <identifier>
+    <value value="InterventionPlanforICUPAtientsnoDeliriumGoal"/>
+  </identifier>
+  <version value="7.0"/>
+  <name value="Intervention_Plan_ICU_Patients_no_Delirium_Goal"/>
+  <title value="Intervention plan for ICU Patients: no Delirium Goal"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/plan-definition-type"/>
+      <code value="eca-rule"/>
+    </coding>
+  </type>
+  <status value="active"/>
+  <experimental value="true"/>
+  <subjectCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-no-delirium-goal/population/patients-icu-no-delirium-goal"/>
+  <date value="2023-09"/>
+  <publisher value="NUM CODEX+ CELIDA"/>
+  <description value="Intensive care patients should be delirium free"/>
+  <goal id="dlirium-management-goal">
+    <category>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="273249006"/>
+        <display value="Assessment scales (assessment scale)"/>
+      </coding>
+    </category>
+    <description>
+      <text value="CAM-ICU should be negativ"/>
+    </description>
+    <target>
+      <measure>
+        <coding>
+          <system value="http://loinc.org"/>
+          <code value="54627-5"/>
+          <display value="Signs and symptoms of delirium (from CAM) [CAM.MDSv3]"/>
+        </coding>
+      </measure>
+      <detailCodeableConcept>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="260385009"/>
+          <display value="Negative (qualifier value)"/>
+        </coding>
+      </detailCodeableConcept>
+    </target>
+  </goal>
+  <action>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="386053000"/>
+        <display value="Evaluation procedure (procedure)"/>
+      </coding>
+    </code>
+    <selectionBehavior value="one-or-more"/>
+    <definitionCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-no-delirium-goal/recommended-action/delirium-monitoring-CAMICU"/>
+  </action>
+</PlanDefinition>

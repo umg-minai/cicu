@@ -1,0 +1,787 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ImplementationGuide/template.cpg-on-ebmonfhir.netzwerk-universitaetsmedizin.de> a fhir:ImplementationGuide ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "template.cpg-on-ebmonfhir.netzwerk-universitaetsmedizin.de"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>CPGonEBMonFHIRtemplate</h2><p>The official URL for this implementation guide is: </p><pre>https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ImplementationGuide/template.cpg-on-ebmonfhir.netzwerk-universitaetsmedizin.de</pre></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ImplementationGuide/template.cpg-on-ebmonfhir.netzwerk-universitaetsmedizin.de"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.1-snapshot"] ; # 
+  fhir:name [ fhir:v "CPGonEBMonFHIRtemplate"] ; # 
+  fhir:title [ fhir:v "CPG-on-EBMonFHIR template"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2023-12-18T10:04:10+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Example"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Example" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.example.com" ]
+     ] )
+  ] ) ; # 
+  fhir:packageId [ fhir:v "template.cpg-on-ebmonfhir.netzwerk-universitaetsmedizin.de"] ; # 
+  fhir:license [ fhir:v "CC0-1.0"] ; # 
+  fhir:fhirVersion ( [ fhir:v "5.0.0"] ) ; # 
+  fhir:dependsOn ( [
+     fhir:id [ fhir:v "hl7tx" ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Automatically added as a dependency - all IGs depend on HL7 Terminology" ]
+     ] ) ;
+     fhir:uri [
+       fhir:v "http://terminology.hl7.org/ImplementationGuide/hl7.terminology"^^xsd:anyURI ;
+       fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.terminology.r5" ] ;
+     fhir:version [ fhir:v "5.3.0" ]
+  ] [
+     fhir:id [ fhir:v "hl7ext" ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Automatically added as a dependency - all IGs depend on the HL7 Extension Pack" ]
+     ] ) ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.fhir.uv.extensions.r5" ] ;
+     fhir:version [ fhir:v "1.0.0" ]
+  ] [
+     fhir:id [ fhir:v "de_netzwerk_universitaetsmedizin_ebm_cpg" ] ;
+     fhir:uri [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ImplementationGuide/de.netzwerk-universitaetsmedizin.ebm-cpg"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ImplementationGuide/de.netzwerk-universitaetsmedizin.ebm-cpg>
+     ] ;
+     fhir:packageId [ fhir:v "de.netzwerk-universitaetsmedizin.ebm-cpg" ] ;
+     fhir:version [ fhir:v "0.7.1-snapshot" ]
+  ] ) ; # 
+  fhir:definition [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "hl7.fhir.uv.tools#current" ]
+     ] ) ;
+     fhir:resource ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/AnxietyMonitoringSTAI> ;
+         fhir:reference [ fhir:v "ActivityDefinition/AnxietyMonitoringSTAI" ]
+       ] ;
+       fhir:name [ fhir:v "Anxiety Monitoring with STAI" ] ;
+       fhir:description [ fhir:v "Anxiety Monitoring in ICU Patients with STAI" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/CodeSystem/codex-celida> ;
+         fhir:reference [ fhir:v "CodeSystem/codex-celida" ]
+       ] ;
+       fhir:name [ fhir:v "CODEX-CELIDA" ] ;
+       fhir:description [ fhir:v "Concepts required in recommendations that are not defined elsewhere" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/DeliriumMonitoringCAMICUnegative> ;
+         fhir:reference [ fhir:v "ActivityDefinition/DeliriumMonitoringCAMICUnegative" ]
+       ] ;
+       fhir:name [ fhir:v "Delirium Monitoring with CAMICU" ] ;
+       fhir:description [ fhir:v "Delirium Monitoring in ICU Patients with CAMICU" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/DeliriumMonitoringCAMICU> ;
+         fhir:reference [ fhir:v "ActivityDefinition/DeliriumMonitoringCAMICU" ]
+       ] ;
+       fhir:name [ fhir:v "Delirium Monitoring with CAMICU" ] ;
+       fhir:description [ fhir:v "Delirium Monitoring in ICU Patients with RASS" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/DeliriumMonitoringNuDESC> ;
+         fhir:reference [ fhir:v "ActivityDefinition/DeliriumMonitoringNuDESC" ]
+       ] ;
+       fhir:name [ fhir:v "Delirium Monitoring with NuDESC" ] ;
+       fhir:description [ fhir:v "Delirium Monitoring in ICU Patients with NuDESC" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "PlanDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/PlanDefinition/InterventionPatientsICUDAASMonitoring> ;
+         fhir:reference [ fhir:v "PlanDefinition/InterventionPatientsICUDAASMonitoring" ]
+       ] ;
+       fhir:name [ fhir:v "Intervention plan for ICU Patients: DAAS Monitoring" ] ;
+       fhir:description [ fhir:v "ICU Patients: DAAS Monitoring" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "PlanDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/PlanDefinition/InterventionPatientsICUDeliriumMonitoring> ;
+         fhir:reference [ fhir:v "PlanDefinition/InterventionPatientsICUDeliriumMonitoring" ]
+       ] ;
+       fhir:name [ fhir:v "Intervention plan for ICU Patients: Delirium Monitoring" ] ;
+       fhir:description [ fhir:v "ICU Patients: Delirium Monitoring" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "PlanDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/PlanDefinition/InterventionPatientsICUnoDeliriumGoal> ;
+         fhir:reference [ fhir:v "PlanDefinition/InterventionPatientsICUnoDeliriumGoal" ]
+       ] ;
+       fhir:name [ fhir:v "Intervention plan for ICU Patients: no Delirium Goal" ] ;
+       fhir:description [ fhir:v "ICU Patients should be delirium free" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "PlanDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/PlanDefinition/InterventionPatientsICUNRSgoal> ;
+         fhir:reference [ fhir:v "PlanDefinition/InterventionPatientsICUNRSgoal" ]
+       ] ;
+       fhir:name [ fhir:v "Intervention plan for ICU Patients: NRS goal <4" ] ;
+       fhir:description [ fhir:v "In ICU Patients NRS should be <4" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "PlanDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/PlanDefinition/InterventionPatientsICUPainMonitoring> ;
+         fhir:reference [ fhir:v "PlanDefinition/InterventionPatientsICUPainMonitoring" ]
+       ] ;
+       fhir:name [ fhir:v "Intervention plan for ICU Patients: Pain Monitoring" ] ;
+       fhir:description [ fhir:v "ICU Patients: Pain Monitoring" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "PlanDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/PlanDefinition/InterventionPatientsICUSedationGoal> ;
+         fhir:reference [ fhir:v "PlanDefinition/InterventionPatientsICUSedationGoal" ]
+       ] ;
+       fhir:name [ fhir:v "Intervention plan for ICU Patients: Sedation goal RASS 0 to -1" ] ;
+       fhir:description [ fhir:v "In ICU Patients RASS should be 0 or -1, with exeption for specificaly indicated deeper sedation" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "PlanDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/PlanDefinition/InterventionPatientsICUSedationMonitoring> ;
+         fhir:reference [ fhir:v "PlanDefinition/InterventionPatientsICUSedationMonitoring" ]
+       ] ;
+       fhir:name [ fhir:v "Intervention plan for ICU Patients: Sedation Monitoring" ] ;
+       fhir:description [ fhir:v "ICU Patients: Sedation Monitoring" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/PainMonitoringBPS> ;
+         fhir:reference [ fhir:v "ActivityDefinition/PainMonitoringBPS" ]
+       ] ;
+       fhir:name [ fhir:v "Pain Monitoring with BPS" ] ;
+       fhir:description [ fhir:v "Pain Monitoring in ICU Patients with BPS" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/PainMonitoringCPOT> ;
+         fhir:reference [ fhir:v "ActivityDefinition/PainMonitoringCPOT" ]
+       ] ;
+       fhir:name [ fhir:v "Pain Monitoring with CPOT" ] ;
+       fhir:description [ fhir:v "Pain Monitoring in ICU Patients with CPOT" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/PainMonitoringFPS-R> ;
+         fhir:reference [ fhir:v "ActivityDefinition/PainMonitoringFPS-R" ]
+       ] ;
+       fhir:name [ fhir:v "Pain Monitoring with FPS-R" ] ;
+       fhir:description [ fhir:v "Pain Monitoring in ICU Patients with FPS-R" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/PainMonitoringNRS> ;
+         fhir:reference [ fhir:v "ActivityDefinition/PainMonitoringNRS" ]
+       ] ;
+       fhir:name [ fhir:v "Pain Monitoring with NRS" ] ;
+       fhir:description [ fhir:v "Pain Monitoring in ICU Patients with NRS" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/PainMonitoringVAS> ;
+         fhir:reference [ fhir:v "ActivityDefinition/PainMonitoringVAS" ]
+       ] ;
+       fhir:name [ fhir:v "Pain Monitoring with VAS" ] ;
+       fhir:description [ fhir:v "Pain Monitoring in ICU Patients with VAS" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/PainMonitoringVRS> ;
+         fhir:reference [ fhir:v "ActivityDefinition/PainMonitoringVRS" ]
+       ] ;
+       fhir:name [ fhir:v "Pain Monitoring with VRS" ] ;
+       fhir:description [ fhir:v "Pain Monitoring in ICU Patients with VRS" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "EvidenceVariable" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/EvidenceVariable/PopulationPatientsICUnoDeliriumGoal> ;
+         fhir:reference [ fhir:v "EvidenceVariable/PopulationPatientsICUnoDeliriumGoal" ]
+       ] ;
+       fhir:name [ fhir:v "Population: ICU Patients no Delirium Goal" ] ;
+       fhir:description [ fhir:v "Population for recommendation 9: ICU Patients Delirium Goal is no Delirium" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "EvidenceVariable" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/EvidenceVariable/PopulationPatientsICUNRSgoal> ;
+         fhir:reference [ fhir:v "EvidenceVariable/PopulationPatientsICUNRSgoal" ]
+       ] ;
+       fhir:name [ fhir:v "Population: ICU Patients NRS goal <4" ] ;
+       fhir:description [ fhir:v "Population for recommendation 9: ICU Patients NRS goal <4" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "EvidenceVariable" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/EvidenceVariable/PopulationPatientsICUSedationGoal> ;
+         fhir:reference [ fhir:v "EvidenceVariable/PopulationPatientsICUSedationGoal" ]
+       ] ;
+       fhir:name [ fhir:v "Population: ICU Patients Sedation goal RASS 0 to -1" ] ;
+       fhir:description [ fhir:v "Population for recommendation 10: ICU Patients Sedation goal RASS 0 to -1" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "EvidenceVariable" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/EvidenceVariable/PopulationPatientsICUDAASMonitoring> ;
+         fhir:reference [ fhir:v "EvidenceVariable/PopulationPatientsICUDAASMonitoring" ]
+       ] ;
+       fhir:name [ fhir:v "Population: ICU Patients: DAAS Monitoring" ] ;
+       fhir:description [ fhir:v "Population for recommendation 8: DAAS Monitoring" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "EvidenceVariable" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/EvidenceVariable/PopulationPatientsICUDeliriumMonitoring> ;
+         fhir:reference [ fhir:v "EvidenceVariable/PopulationPatientsICUDeliriumMonitoring" ]
+       ] ;
+       fhir:name [ fhir:v "Population: ICU Patients: Delirium Monitoring" ] ;
+       fhir:description [ fhir:v "Population for recommendation 3: Delirium Monitoring" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "EvidenceVariable" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/EvidenceVariable/PopulationPatientsICUPainMonitoring> ;
+         fhir:reference [ fhir:v "EvidenceVariable/PopulationPatientsICUPainMonitoring" ]
+       ] ;
+       fhir:name [ fhir:v "Population: ICU Patients: Pain Monitoring" ] ;
+       fhir:description [ fhir:v "Population for recommendation 1: ICU Patients Pain Monitoring" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "EvidenceVariable" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/EvidenceVariable/PopulationPatientsICUSedationMonitoring> ;
+         fhir:reference [ fhir:v "EvidenceVariable/PopulationPatientsICUSedationMonitoring" ]
+       ] ;
+       fhir:name [ fhir:v "Population: ICU Patients: Sedation Monitoring" ] ;
+       fhir:description [ fhir:v "Population for recommendation 2: ICU Patients Sedation Monitoring" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "PlanDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/PlanDefinition/RecommendationPatientsICUnoDeliriumGoal> ;
+         fhir:reference [ fhir:v "PlanDefinition/RecommendationPatientsICUnoDeliriumGoal" ]
+       ] ;
+       fhir:name [ fhir:v "Recommendation: ICU Patients No Delirium Goal" ] ;
+       fhir:description [ fhir:v "Recommendation for ICU Patients: The Delirium Goal is no Dilirium" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "PlanDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/PlanDefinition/RecommendationPatientsICUSedationGoal> ;
+         fhir:reference [ fhir:v "PlanDefinition/RecommendationPatientsICUSedationGoal" ]
+       ] ;
+       fhir:name [ fhir:v "Recommendation: ICU Patients Sedation Goal RASS" ] ;
+       fhir:description [ fhir:v "Recommendation for ICU Patients: Sedation Goal RASS is 0 to -1" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "PlanDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/PlanDefinition/RecommendationPatientsICUDAASMonitoring> ;
+         fhir:reference [ fhir:v "PlanDefinition/RecommendationPatientsICUDAASMonitoring" ]
+       ] ;
+       fhir:name [ fhir:v "Recommendation: ICU Patients: DAAS Monitoring" ] ;
+       fhir:description [ fhir:v "Recommendation for ICU Patients: Delir, Anxiety, Analgesia, Sedation Monitoring" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "PlanDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/PlanDefinition/RecommendationPatientsICUDeliriumMonitoring> ;
+         fhir:reference [ fhir:v "PlanDefinition/RecommendationPatientsICUDeliriumMonitoring" ]
+       ] ;
+       fhir:name [ fhir:v "Recommendation: ICU Patients: Delirium Monitoring" ] ;
+       fhir:description [ fhir:v "Recommendation for ICU Patients: Delirium Monitoring" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "PlanDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/PlanDefinition/RecommendationPatientsICUNRSgoal> ;
+         fhir:reference [ fhir:v "PlanDefinition/RecommendationPatientsICUNRSgoal" ]
+       ] ;
+       fhir:name [ fhir:v "Recommendation: ICU Patients: NRS goal <4" ] ;
+       fhir:description [ fhir:v "Recommendation for ICU Patients to archive an NRS goal below 4" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "PlanDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/PlanDefinition/RecommendationPatientsICUPainMonitoring> ;
+         fhir:reference [ fhir:v "PlanDefinition/RecommendationPatientsICUPainMonitoring" ]
+       ] ;
+       fhir:name [ fhir:v "Recommendation: ICU Patients: Pain Monitoring" ] ;
+       fhir:description [ fhir:v "Recommendation for ICU Patients: Pain Monitoring" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "PlanDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/PlanDefinition/RecommendationPatientsICUSedationMonitoring> ;
+         fhir:reference [ fhir:v "PlanDefinition/RecommendationPatientsICUSedationMonitoring" ]
+       ] ;
+       fhir:name [ fhir:v "Recommendation: ICU Patients: Sedation Monitoring" ] ;
+       fhir:description [ fhir:v "Recommendation for ICU Patients: Sedation Monitoring" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/SedationMonitoringRASS> ;
+         fhir:reference [ fhir:v "ActivityDefinition/SedationMonitoringRASS" ]
+       ] ;
+       fhir:name [ fhir:v "Sedation Monitoring with RASS" ] ;
+       fhir:description [ fhir:v "Sedation Monitoring in ICU Patients with RASS" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] ) ;
+     fhir:page [
+       fhir:source [ fhir:v "toc.html"^^xsd:anyURI ] ;
+       fhir:name [ fhir:v "toc.html"^^xsd:anyURI ] ;
+       fhir:title [ fhir:v "Table of Contents" ] ;
+       fhir:generation [ fhir:v "html" ] ;
+       fhir:page ( [
+         fhir:source [ fhir:v "index.html"^^xsd:anyURI ] ;
+         fhir:name [ fhir:v "index.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "CPG-on-EBMonFHIR template" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:source [ fhir:v "downloads.html"^^xsd:anyURI ] ;
+         fhir:name [ fhir:v "downloads.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Downloads" ] ;
+         fhir:generation [ fhir:v "html" ]
+       ] [
+         fhir:source [ fhir:v "changelog.html"^^xsd:anyURI ] ;
+         fhir:name [ fhir:v "changelog.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Change Log" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] )
+     ] ;
+     fhir:parameter ( [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "copyrightyear" ]
+       ] ;
+       fhir:value [ fhir:v "2023+" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "releaselabel" ]
+       ] ;
+       fhir:value [ fhir:v "ci-build" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "active-tables" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-contact" ]
+       ] ;
+       fhir:value [ fhir:v "false" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-jurisdiction" ]
+       ] ;
+       fhir:value [ fhir:v "false" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-publisher" ]
+       ] ;
+       fhir:value [ fhir:v "false" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-version" ]
+       ] ;
+       fhir:value [ fhir:v "false" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "show-inherited-invariants" ]
+       ] ;
+       fhir:value [ fhir:v "false" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "usage-stats-opt-out" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "excludexml" ]
+       ] ;
+       fhir:value [ fhir:v "false" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "excludejsn" ]
+       ] ;
+       fhir:value [ fhir:v "false" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "excludettl" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "excludemap" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "excludeexample" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "extension-domain" ]
+       ] ;
+       fhir:value [ fhir:v "https://www.netzwerk-universitaetsmedizin.de" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "extension-domain" ]
+       ] ;
+       fhir:value [ fhir:v "https://simplifier.net" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "autoload-resources" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/capabilities" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/examples" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/extensions" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/models" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/operations" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/profiles" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/resources" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/vocabulary" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/maps" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/testing" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/history" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "fsh-generated/resources" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-pages" ]
+       ] ;
+       fhir:value [ fhir:v "template/config" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-pages" ]
+       ] ;
+       fhir:value [ fhir:v "input/images" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-liquid" ]
+       ] ;
+       fhir:value [ fhir:v "template/liquid" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-liquid" ]
+       ] ;
+       fhir:value [ fhir:v "input/liquid" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-qa" ]
+       ] ;
+       fhir:value [ fhir:v "temp/qa" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-temp" ]
+       ] ;
+       fhir:value [ fhir:v "temp/pages" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-output" ]
+       ] ;
+       fhir:value [ fhir:v "output" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-tx-cache" ]
+       ] ;
+       fhir:value [ fhir:v "input-cache/txcache" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-suppressed-warnings" ]
+       ] ;
+       fhir:value [ fhir:v "input/ignoreWarnings.txt" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-history" ]
+       ] ;
+       fhir:value [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/history.html" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "template-html" ]
+       ] ;
+       fhir:value [ fhir:v "template-page.html" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "template-md" ]
+       ] ;
+       fhir:value [ fhir:v "template-page-md.html" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-context" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-copyright" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-license" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-wg" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "fmm-definition" ]
+       ] ;
+       fhir:value [ fhir:v "http://hl7.org/fhir/versions.html#maturity" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "propagate-status" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "excludelogbinaryformat" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "tabbed-snapshots" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PlanDefinition xmlns="http://hl7.org/fhir">
+  <id value="InterventionPatientsICUDAASMonitoring"/>
+  <meta>
+    <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-plan"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: PlanDefinition</b><a name="InterventionPatientsICUDAASMonitoring"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource PlanDefinition &quot;InterventionPatientsICUDAASMonitoring&quot; </p><p style="margin-bottom: 0px">Profile: <a href="file:///github/workspace/output/StructureDefinition-recommendation-plan.html">Recommendation Plan</a></p></div><p><b>knowledgeCapability</b>: computable</p><p><b>knowledgeRepresentationLevel</b>: structured</p><p><b>partOf</b>: <a href="PlanDefinition-RecommendationPatientsICUDAASMonitoring.html">Intervention for Population: ICU Patients - DAAS Monitoring</a></p><p><b>url</b>: <code>https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-daas-monitoring/intervention-plan/patients-icu-daas-monitoring</code></p><p><b>identifier</b>: id: InterventionPlanforICUPatientsDAASMonitoring</p><p><b>version</b>: 1.0</p><p><b>name</b>: Intervention_Plan_ICU_Patients_DAAS_Monitoring</p><p><b>title</b>: Intervention plan for ICU Patients: DAAS Monitoring with NuDESC or CAMICU</p><p><b>type</b>: ECA Rule <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.3.0/CodeSystem-plan-definition-type.html">PlanDefinitionType</a>#eca-rule)</span></p><p><b>status</b>: active</p><p><b>experimental</b>: true</p><p><b>subject</b>: <a href="EvidenceVariable-PopulationPatientsICUDAASMonitoring.html">Population: ICU Patients: DAAS Monitoring</a></p><p><b>date</b>: 2023-10</p><p><b>publisher</b>: NUM CODEX+ CELIDA</p><p><b>description</b>: In ICU Patients Findings ind DAAS Monitoring should be documented at least once per shift</p><blockquote><p><b>action</b></p><p><b>code</b>: Evaluation procedure (procedure) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#386053000)</span></p><p><b>selectionBehavior</b>: one-or-more</p><p><b>definition</b>: <a href="ActivityDefinition-DeliriumMonitoringCAMICU.html">Delirium Monitoring with CAMICU</a></p></blockquote><blockquote><p><b>action</b></p><p><b>code</b>: Evaluation procedure (procedure) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#386053000)</span></p><p><b>selectionBehavior</b>: one-or-more</p><p><b>definition</b>: <a href="ActivityDefinition-DeliriumMonitoringNuDESC.html">Delirium Monitoring with NuDESC</a></p></blockquote><blockquote><p><b>action</b></p><p><b>code</b>: Evaluation procedure (procedure) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#386053000)</span></p><p><b>selectionBehavior</b>: one-or-more</p><p><b>definition</b>: <a href="ActivityDefinition-SedationMonitoringRASS.html">Sedation Monitoring with RASS</a></p></blockquote><blockquote><p><b>action</b></p><p><b>code</b>: Evaluation procedure (procedure) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#386053000)</span></p><p><b>selectionBehavior</b>: one-or-more</p><p><b>definition</b>: <a href="ActivityDefinition-PainMonitoringNRS.html">Pain Monitoring with NRS</a></p></blockquote><blockquote><p><b>action</b></p><p><b>code</b>: Evaluation procedure (procedure) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#386053000)</span></p><p><b>selectionBehavior</b>: one-or-more</p><p><b>definition</b>: <a href="ActivityDefinition-PainMonitoringVAS.html">Pain Monitoring with VAS</a></p></blockquote><blockquote><p><b>action</b></p><p><b>code</b>: Evaluation procedure (procedure) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#386053000)</span></p><p><b>selectionBehavior</b>: one-or-more</p><p><b>definition</b>: <a href="ActivityDefinition-PainMonitoringVRS.html">Pain Monitoring with VRS</a></p></blockquote><blockquote><p><b>action</b></p><p><b>code</b>: Evaluation procedure (procedure) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#386053000)</span></p><p><b>selectionBehavior</b>: one-or-more</p><p><b>definition</b>: <a href="ActivityDefinition-PainMonitoringFPS-R.html">Pain Monitoring with FPS-R</a></p></blockquote><blockquote><p><b>action</b></p><p><b>code</b>: Evaluation procedure (procedure) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#386053000)</span></p><p><b>selectionBehavior</b>: one-or-more</p><p><b>definition</b>: <a href="ActivityDefinition-PainMonitoringBPS.html">Pain Monitoring with BPS</a></p></blockquote><blockquote><p><b>action</b></p><p><b>code</b>: Evaluation procedure (procedure) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#386053000)</span></p><p><b>selectionBehavior</b>: one-or-more</p><p><b>definition</b>: <a href="ActivityDefinition-PainMonitoringCPOT.html">Pain Monitoring with CPOT</a></p></blockquote><blockquote><p><b>action</b></p><p><b>code</b>: Evaluation procedure (procedure) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#386053000)</span></p><p><b>selectionBehavior</b>: one-or-more</p><p><b>definition</b>: <a href="ActivityDefinition-AnxietyMonitoringSTAI.html">Anxiety Monitoring with STAI</a></p></blockquote></div>
+  </text>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+    <valueCode value="computable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel">
+    <valueCode value="structured"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-partOf">
+    <valueCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-daas-monitoring/recommendation/patients-icu-daas-monitoring"/>
+  </extension>
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-daas-monitoring/intervention-plan/patients-icu-daas-monitoring"/>
+  <identifier>
+    <value value="InterventionPlanforICUPatientsDAASMonitoring"/>
+  </identifier>
+  <version value="1.0"/>
+  <name value="Intervention_Plan_ICU_Patients_DAAS_Monitoring"/>
+  <title value="Intervention plan for ICU Patients: DAAS Monitoring with NuDESC or CAMICU"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/plan-definition-type"/>
+      <code value="eca-rule"/>
+    </coding>
+  </type>
+  <status value="active"/>
+  <experimental value="true"/>
+  <subjectCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-daas-monitoring/population/patients-icu-daas-monitoring"/>
+  <date value="2023-10"/>
+  <publisher value="NUM CODEX+ CELIDA"/>
+  <description value="In ICU Patients Findings ind DAAS Monitoring should be documented at least once per shift"/>
+  <action>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="386053000"/>
+        <display value="Evaluation procedure (procedure)"/>
+      </coding>
+    </code>
+    <selectionBehavior value="one-or-more"/>
+    <definitionCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-delirium-monitoring/recommended-action/delirium-monitoring-CAMICU"/>
+  </action>
+  <action>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="386053000"/>
+        <display value="Evaluation procedure (procedure)"/>
+      </coding>
+    </code>
+    <selectionBehavior value="one-or-more"/>
+    <definitionCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-delirium-monitoring/recommended-action/delirium-monitoring-NuDesc"/>
+  </action>
+  <action>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="386053000"/>
+        <display value="Evaluation procedure (procedure)"/>
+      </coding>
+    </code>
+    <selectionBehavior value="one-or-more"/>
+    <definitionCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-sedation-monitoring/recommended-action/sedation-monitoring-RASS"/>
+  </action>
+  <action>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="386053000"/>
+        <display value="Evaluation procedure (procedure)"/>
+      </coding>
+    </code>
+    <selectionBehavior value="one-or-more"/>
+    <definitionCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-pain-monitoring/recommended-action/pain-monitoring-NRS"/>
+  </action>
+  <action>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="386053000"/>
+        <display value="Evaluation procedure (procedure)"/>
+      </coding>
+    </code>
+    <selectionBehavior value="one-or-more"/>
+    <definitionCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-pain-monitoring/recommended-action/pain-monitoring-VAS"/>
+  </action>
+  <action>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="386053000"/>
+        <display value="Evaluation procedure (procedure)"/>
+      </coding>
+    </code>
+    <selectionBehavior value="one-or-more"/>
+    <definitionCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-pain-monitoring/recommended-action/pain-monitoring-VRS"/>
+  </action>
+  <action>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="386053000"/>
+        <display value="Evaluation procedure (procedure)"/>
+      </coding>
+    </code>
+    <selectionBehavior value="one-or-more"/>
+    <definitionCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-pain-monitoring/recommended-action/pain-monitoring-FPS-R"/>
+  </action>
+  <action>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="386053000"/>
+        <display value="Evaluation procedure (procedure)"/>
+      </coding>
+    </code>
+    <selectionBehavior value="one-or-more"/>
+    <definitionCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-pain-monitoring/recommended-action/pain-monitoring-BPS"/>
+  </action>
+  <action>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="386053000"/>
+        <display value="Evaluation procedure (procedure)"/>
+      </coding>
+    </code>
+    <selectionBehavior value="one-or-more"/>
+    <definitionCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-pain-monitoring/recommended-action/pain-monitoring-CPOT"/>
+  </action>
+  <action>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="386053000"/>
+        <display value="Evaluation procedure (procedure)"/>
+      </coding>
+    </code>
+    <selectionBehavior value="one-or-more"/>
+    <definitionCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-daas-monitoring/recommended-action/anxiety-monitoring-NuDesc"/>
+  </action>
+</PlanDefinition>

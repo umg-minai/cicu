@@ -1,0 +1,65 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/AnxietyMonitoringSTAI> a fhir:ActivityDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "AnxietyMonitoringSTAI"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/assessment-action"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/assessment-action>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ActivityDefinition</b><a name=\"AnxietyMonitoringSTAI\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ActivityDefinition &quot;AnxietyMonitoringSTAI&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"file:///github/workspace/output/StructureDefinition-assessment-action.html\">Assessment Action</a></p></div><p><b>knowledgeCapability</b>: computable</p><p><b>knowledgeRepresentationLevel</b>: structured</p><p><b>url</b>: <code>https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-daas-monitoring/recommended-action/anxiety-monitoring-NuDesc</code></p><p><b>version</b>: 1.0</p><p><b>name</b>: AnxietyMonitoringWithSTAIPlan</p><p><b>title</b>: Anxiety Monitoring with STAI</p><p><b>status</b>: active</p><p><b>experimental</b>: true</p><p><b>subject</b>: Patient <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/R5/codesystem-fhir-types.html\">All FHIR Types</a>#Patient)</span></p><p><b>date</b>: 2023-12-18 10:04:10+0000</p><p><b>publisher</b>: NUM CODEX+ CELIDA</p><p><b>description</b>: Anxiety monitoring in ICU Patients with STAI</p><p><b>kind</b>: ServiceRequest</p><p><b>code</b>: Spielberger state-trait anxiety inventory (assessment scale) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#273830002)</span></p><p><b>timing</b>: Code: every 8 hours</p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "computable" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "structured" ]
+  ] ) ; # 
+  fhir:url [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-daas-monitoring/recommended-action/anxiety-monitoring-NuDesc"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0"] ; # 
+  fhir:name [ fhir:v "AnxietyMonitoringWithSTAIPlan"] ; # 
+  fhir:title [ fhir:v "Anxiety Monitoring with STAI"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:subject [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/fhir-types"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "Patient" ]
+     ] )
+  ] ; # 
+  fhir:date [ fhir:v "2023-12-18T10:04:10+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "NUM CODEX+ CELIDA"] ; # 
+  fhir:description [ fhir:v "Anxiety monitoring in ICU Patients with STAI"] ; # 
+  fhir:kind [ fhir:v "ServiceRequest"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:273830002 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "273830002" ] ;
+       fhir:display [ fhir:v "Spielberger state-trait anxiety inventory (assessment scale)" ]
+     ] )
+  ] ; # 
+  fhir:timing [
+     a fhir:Timing ;
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-GTSAbbreviation"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Q8H" ]
+       ] )
+     ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

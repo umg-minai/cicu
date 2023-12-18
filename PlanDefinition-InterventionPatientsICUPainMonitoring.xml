@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PlanDefinition xmlns="http://hl7.org/fhir">
+  <id value="InterventionPatientsICUPainMonitoring"/>
+  <meta>
+    <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-plan"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: PlanDefinition</b><a name="InterventionPatientsICUPainMonitoring"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource PlanDefinition &quot;InterventionPatientsICUPainMonitoring&quot; </p><p style="margin-bottom: 0px">Profile: <a href="file:///github/workspace/output/StructureDefinition-recommendation-plan.html">Recommendation Plan</a></p></div><p><b>knowledgeCapability</b>: computable</p><p><b>knowledgeRepresentationLevel</b>: structured</p><p><b>partOf</b>: <a href="PlanDefinition-RecommendationPatientsICUPainMonitoring.html">Intervention for Population: ICU Patients - Pain Monitoring</a></p><p><b>url</b>: <code>https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-pain-monitoring/intervention-plan/patients-icu-pain-monitoring</code></p><p><b>identifier</b>: id: InterventionPlanforICUPatientsPainMonitoring</p><p><b>version</b>: 7.0</p><p><b>name</b>: Intervention_Plan_ICU_Patients_Pain_Monitoring</p><p><b>title</b>: Intervention plan for ICU Patients: Pain Monitoring</p><p><b>type</b>: ECA Rule <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.3.0/CodeSystem-plan-definition-type.html">PlanDefinitionType</a>#eca-rule)</span></p><p><b>status</b>: active</p><p><b>experimental</b>: true</p><p><b>subject</b>: <a href="EvidenceVariable-PopulationPatientsICUPainMonitoring.html">Population: ICU Patients: Pain Monitoring</a></p><p><b>date</b>: 2023-10</p><p><b>publisher</b>: NUM CODEX+ CELIDA</p><p><b>description</b>: In intensive care patients pain should be monitored with validated pain scores at least 1 time per shift </p><blockquote><p><b>action</b></p><p><b>code</b>: Evaluation procedure (procedure) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#386053000)</span></p><p><b>selectionBehavior</b>: one-or-more</p><p><b>definition</b>: <a href="ActivityDefinition-PainMonitoringNRS.html">Pain Monitoring with NRS</a></p></blockquote><blockquote><p><b>action</b></p><p><b>code</b>: Evaluation procedure (procedure) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#386053000)</span></p><p><b>selectionBehavior</b>: one-or-more</p><p><b>definition</b>: <a href="ActivityDefinition-PainMonitoringVAS.html">Pain Monitoring with VAS</a></p></blockquote><blockquote><p><b>action</b></p><p><b>code</b>: Evaluation procedure (procedure) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#386053000)</span></p><p><b>selectionBehavior</b>: one-or-more</p><p><b>definition</b>: <a href="ActivityDefinition-PainMonitoringVRS.html">Pain Monitoring with VRS</a></p></blockquote><blockquote><p><b>action</b></p><p><b>code</b>: Evaluation procedure (procedure) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#386053000)</span></p><p><b>selectionBehavior</b>: one-or-more</p><p><b>definition</b>: <a href="ActivityDefinition-PainMonitoringFPS-R.html">Pain Monitoring with FPS-R</a></p></blockquote><blockquote><p><b>action</b></p><p><b>code</b>: Evaluation procedure (procedure) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#386053000)</span></p><p><b>selectionBehavior</b>: one-or-more</p><p><b>definition</b>: <a href="ActivityDefinition-PainMonitoringBPS.html">Pain Monitoring with BPS</a></p></blockquote><blockquote><p><b>action</b></p><p><b>code</b>: Evaluation procedure (procedure) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#386053000)</span></p><p><b>selectionBehavior</b>: one-or-more</p><p><b>definition</b>: <a href="ActivityDefinition-PainMonitoringCPOT.html">Pain Monitoring with CPOT</a></p></blockquote></div>
+  </text>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+    <valueCode value="computable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel">
+    <valueCode value="structured"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-partOf">
+    <valueCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-pain-monitoring/recommendation/patients-icu-pain-monitoring"/>
+  </extension>
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-pain-monitoring/intervention-plan/patients-icu-pain-monitoring"/>
+  <identifier>
+    <value value="InterventionPlanforICUPatientsPainMonitoring"/>
+  </identifier>
+  <version value="7.0"/>
+  <name value="Intervention_Plan_ICU_Patients_Pain_Monitoring"/>
+  <title value="Intervention plan for ICU Patients: Pain Monitoring"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/plan-definition-type"/>
+      <code value="eca-rule"/>
+    </coding>
+  </type>
+  <status value="active"/>
+  <experimental value="true"/>
+  <subjectCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-painmonitoring/population/patients-icu-pain-monitoring"/>
+  <date value="2023-10"/>
+  <publisher value="NUM CODEX+ CELIDA"/>
+  <description value="In intensive care patients pain should be monitored with validated pain scores at least 1 time per shift "/>
+  <action>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="386053000"/>
+        <display value="Evaluation procedure (procedure)"/>
+      </coding>
+    </code>
+    <selectionBehavior value="one-or-more"/>
+    <definitionCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-pain-monitoring/recommended-action/pain-monitoring-NRS"/>
+  </action>
+  <action>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="386053000"/>
+        <display value="Evaluation procedure (procedure)"/>
+      </coding>
+    </code>
+    <selectionBehavior value="one-or-more"/>
+    <definitionCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-pain-monitoring/recommended-action/pain-monitoring-VAS"/>
+  </action>
+  <action>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="386053000"/>
+        <display value="Evaluation procedure (procedure)"/>
+      </coding>
+    </code>
+    <selectionBehavior value="one-or-more"/>
+    <definitionCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-pain-monitoring/recommended-action/pain-monitoring-VRS"/>
+  </action>
+  <action>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="386053000"/>
+        <display value="Evaluation procedure (procedure)"/>
+      </coding>
+    </code>
+    <selectionBehavior value="one-or-more"/>
+    <definitionCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-pain-monitoring/recommended-action/pain-monitoring-FPS-R"/>
+  </action>
+  <action>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="386053000"/>
+        <display value="Evaluation procedure (procedure)"/>
+      </coding>
+    </code>
+    <selectionBehavior value="one-or-more"/>
+    <definitionCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-pain-monitoring/recommended-action/pain-monitoring-BPS"/>
+  </action>
+  <action>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="386053000"/>
+        <display value="Evaluation procedure (procedure)"/>
+      </coding>
+    </code>
+    <selectionBehavior value="one-or-more"/>
+    <definitionCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/patients-icu-pain-monitoring/recommended-action/pain-monitoring-CPOT"/>
+  </action>
+</PlanDefinition>

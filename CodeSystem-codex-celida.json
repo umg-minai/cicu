@@ -1,0 +1,33 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "codex-celida",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This  code system <code>https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/CodeSystem/codex-celida</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">tvpibw<a name=\"codex-celida-tvpibw\"> </a></td><td>Tidal volume / ideal body weight (ARDSnet)</td><td>Tidal volume per ideal body weight according to ARDSnet formula</td></tr><tr><td style=\"white-space:nowrap\">nudesc<a name=\"codex-celida-nudesc\"> </a></td><td>Nursing Delirium Screening Scale (Nu-DESC)</td><td/></tr><tr><td style=\"white-space:nowrap\">bps<a name=\"codex-celida-bps\"> </a></td><td>Behavioral Pain Scale (BPS)</td><td/></tr><tr><td style=\"white-space:nowrap\">cpot<a name=\"codex-celida-cpot\"> </a></td><td>Critical Care Pain Observation Tool (CPOT)</td><td/></tr></table></div>"
+  },
+  "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/CodeSystem/codex-celida",
+  "name" : "CODEX_CELIDA",
+  "title" : "CODEX-CELIDA",
+  "status" : "draft",
+  "date" : "2023-12-18T10:04:10+00:00",
+  "description" : "Concepts required in recommendations that are not defined elsewhere",
+  "content" : "complete",
+  "count" : 4,
+  "concept" : [{
+    "code" : "tvpibw",
+    "display" : "Tidal volume / ideal body weight (ARDSnet)",
+    "definition" : "Tidal volume per ideal body weight according to ARDSnet formula"
+  },
+  {
+    "code" : "nudesc",
+    "display" : "Nursing Delirium Screening Scale (Nu-DESC)"
+  },
+  {
+    "code" : "bps",
+    "display" : "Behavioral Pain Scale (BPS)"
+  },
+  {
+    "code" : "cpot",
+    "display" : "Critical Care Pain Observation Tool (CPOT)"
+  }]
+}
