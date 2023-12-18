@@ -26,7 +26,7 @@ Description: "In ICU Patients NRS should be <4"
   * target
     * measure = $loinc#72514-3 "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
     * detailRange
-      * high = 3 'score'
+      * high.value = 3
 
 
 /**********************/
@@ -46,5 +46,5 @@ Description: "Anxiety Monitoring in ICU Patients with STAI"
 * status = #active
 * description = "Anxiety monitoring in ICU Patients with STAI"
 * code = $sct#273830002 "Spielberger state-trait anxiety inventory (assessment scale)"
-* timingTiming.code = #Q8H
+* timingTiming.code = $cs-gts-abbreviation#Q8H
 */

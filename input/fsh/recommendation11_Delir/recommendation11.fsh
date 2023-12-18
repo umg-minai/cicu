@@ -6,7 +6,7 @@ InstanceOf: recommendation
 Usage: #definition
 Title: "Recommendation: ICU Patients No Delirium Goal"
 Description: "Recommendation for ICU Patients: The Delirium Goal is no Dilirium"
-* name = "Recommendation9-Delirium-Goal"
+* name = "Recommendation11-Delirium-Goal"
 * title = "Delirium Intervention for Population: ICU Patients Delirium Goal"
 * version = "1.0"
 * date = "2023-11"

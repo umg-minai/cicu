@@ -20,5 +20,5 @@ Description: "Population for recommendation 9: ICU Patients Delirium Goal is no 
     * definitionByTypeAndValue
       * type = $loinc#78030-4 "Episode of care Type"
       * valueCodeableConcept = $cs-kontaktart-de#intensivstationaer "Intensivstationär"
-  * characteristic[episodeOfCare][+].exclude = false
+  * characteristic[episodeOfCare][=].exclude = false
 * characteristic[=].exclude = false

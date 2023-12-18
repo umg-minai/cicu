@@ -22,15 +22,13 @@ Description: "ICU Patients should be delirium free"
   * category = $sct#273249006 "Assessment scales (assessment scale)"
   * target
     * measure = $loinc#54627-5 "Signs and symptoms of delirium (from CAM) [CAM.MDSv3]" 
-    * detailString = "negativ"
+    * detailCodeableConcept = $sct#260385009 "Negative (qualifier value)"
 * action[assessment][+]
   * definitionCanonical = Canonical (DeliriumMonitoringCAMICUnegative)
   * selectionBehavior = #one-or-more
   * code = $sct#386053000 "Evaluation procedure (procedure)"
 
-
-
-  /**********************/
+/**********************/
 /* Recommended Actions */
 /**********************/
 

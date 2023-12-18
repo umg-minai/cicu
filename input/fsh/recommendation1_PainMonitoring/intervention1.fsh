@@ -61,7 +61,7 @@ Description: "Pain Monitoring in ICU Patients with NRS"
 * status = #active
 * description = "Pain monitoring in ICU Patients with NRS"
 * code = $loinc#72514-3 "Pain severity - 0-10 verbal numeric rating [Score] - Reported" 
-* timingTiming.code = #Q8H
+* timingTiming.code = $cs-gts-abbreviation#Q8H
 
 Instance: PainMonitoringVAS
 InstanceOf: assessment-action
@@ -74,7 +74,7 @@ Description: "Pain Monitoring in ICU Patients with VAS"
 * status = #active
 * description = "Pain monitoring in ICU Patients with VAS"
 * code = $loinc#38214-3 "Pain severity [Score] Visual analog score"
-* timingTiming.code = #Q8H
+* timingTiming.code = $cs-gts-abbreviation#Q8H
 
 Instance: PainMonitoringVRS
 InstanceOf: assessment-action
@@ -87,7 +87,7 @@ Description: "Pain Monitoring in ICU Patients with VRS"
 * status = #active
 * description = "Pain monitoring in ICU Patients with VRS"
 * code = $loinc#54834-7 "Rate pain severity during assessment period using verbal descriptor scale"
-* timingTiming.code = #Q8H
+* timingTiming.code = $cs-gts-abbreviation#Q8H
 
 Instance: PainMonitoringFPS-R
 InstanceOf: assessment-action
@@ -100,7 +100,7 @@ Description: "Pain Monitoring in ICU Patients with FPS-R"
 * status = #active
 * description = "Pain monitoring in ICU Patients with FPS-R"
 * code = $loinc#57696-7 "Pain severity FPS-R"
-* timingTiming.code = #Q8H
+* timingTiming.code = $cs-gts-abbreviation#Q8H
 
 Instance: PainMonitoringCPOT
 InstanceOf: assessment-action
@@ -113,7 +113,7 @@ Description: "Pain Monitoring in ICU Patients with CPOT"
 * status = #active
 * description = "Pain monitoring in ICU Patients with CPOT"
 * code = $cs-celida#cpot "Critical Care Pain Observation Tool (CPOT)"
-* timingTiming.code = #Q8H
+* timingTiming.code = $cs-gts-abbreviation#Q8H
 
 Instance: PainMonitoringBPS
 InstanceOf: assessment-action
@@ -126,4 +126,4 @@ Description: "Pain Monitoring in ICU Patients with BPS"
 * status = #active
 * description = "Pain monitoring in ICU Patients with BPS"
 * code = $cs-celida#bps "Behavioral Pain Scale (BPS)"
-* timingTiming.code = #Q8H
+* timingTiming.code = $cs-gts-abbreviation#Q8H

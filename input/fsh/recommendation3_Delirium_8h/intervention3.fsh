@@ -39,7 +39,7 @@ Description: "Delirium Monitoring in ICU Patients with RASS"
 * status = #active
 * description = "Delirium monitoring in ICU Patients with Confusion Assessment Method for Intensive Care Unit (CAMICU)"
 * code = $loinc#85649-2 "LCDS v3.00 - Signs and Symptoms of Delirium (from CAM) [CMS Assessment]"
-* timingTiming.code = #Q8H
+* timingTiming.code = $cs-gts-abbreviation#Q8H
 
 Instance: DeliriumMonitoringNuDESC
 InstanceOf: assessment-action
@@ -52,4 +52,4 @@ Description: "Delirium Monitoring in ICU Patients with NuDESC"
 * status = #active
 * description = "Delirium monitoring in ICU Patients with NuDESC"
 * code = $cs-celida#nudesc "Nursing Delirium Screening Scale (Nu-DESC)"
-* timingTiming.code = #Q8H
+* timingTiming.code = $cs-gts-abbreviation#Q8H
